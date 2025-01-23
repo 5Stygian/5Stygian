@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&family=Reddit+Sans+Condensed:wght@200..900&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap");
+body {
+  color: rgb(215, 215, 215);
+  background-color: rgb(28, 28, 28);
+  font-family: "Reddit Sans";
+  padding: 0px;
+  margin: 0px;
+}
+
+#container {
+  margin: auto;
+  width: 55.555%;
+  box-shadow: -8px 0px 8px rgba(24, 24, 24, 0.2), 8px 0px 24px rgba(24, 24, 24, 0.2);
+}
+#container .content {
+  padding: 8px 16px;
+  background-color: rgb(24, 24, 24);
+}
+#container .content h1 {
+  color: rgb(235, 235, 235);
+  font-family: "Reddit Sans";
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */
