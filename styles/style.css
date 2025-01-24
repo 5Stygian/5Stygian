@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&family=Reddit+Sans+Condensed:wght@200..900&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap");
+body {
+  color: rgb(215, 215, 215);
+  background-color: rgb(28, 28, 28);
+  font-family: "Reddit Sans";
+  padding: 0px;
+  margin: 0px;
+}
+
+table {
+  margin: auto;
+}
+table .tableTitle {
+  color: rgb(235, 235, 235);
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+td {
+  min-width: 250px;
+  transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
+}
+
+td:hover {
+  transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
+  filter: brightness(115%) saturate(110%) hue-rotate(-15deg);
+}
+
+.noShow {
+  display: none;
+}
+
+#container {
+  margin: auto;
+  width: 55.555%;
+  box-shadow: -8px 0px 8px rgba(24, 24, 24, 0.2), 8px 0px 24px rgba(24, 24, 24, 0.2);
+}
+#container .content {
+  padding: 8px 16px;
+  background-color: rgb(24, 24, 24);
+}
+#container .content h1 {
+  color: rgb(235, 235, 235);
+  font-family: "Reddit Sans";
+  font-weight: bold;
+}
+#container .content .headerMain {
+  color: rgb(235, 235, 235);
+  font-family: "Reddit Sans";
+  font-weight: bold;
+  font-size: 3em;
+  padding: 0px 0px 8px 12px;
+}
+#container .content .melonLandForum {
+  border: 1px solid rgb(237, 189, 0);
+  background-image: url(/images/fractal2.jpg);
+  background-attachment: scroll;
+  background-repeat: repeat-x;
+  background-size: cover;
+  font-family: "Times New Roman", Times, serif;
+  padding: 12px;
+}
+#container .content .melonLandForum .melonLandForumInner {
+  border: 1px solid rgb(237, 189, 0);
+  background-color: rgba(7, 7, 7, 0.8);
+  padding: 10px;
+  margin: auto;
+}/*# sourceMappingURL=style.css.map */
