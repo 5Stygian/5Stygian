@@ -34,6 +34,32 @@ td:hover {
     filter: brightness(115%) saturate(110%) hue-rotate(-15deg);
 }
 
+a:link {
+    color: rgb(54,161,214);
+    font-style: $fontMono;
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(54,161,214);
+    filter: hue-rotate(-20deg);
+    font-style: $fontMono;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(54,161,214);
+    font-style: $fontMono;
+    text-decoration: underline;
+}
+
+a:active {
+    color: rgb(54,161,214);
+    font-style: $fontMono;
+    filter: saturation(120%) brightness(110%);
+    text-decoration: underline;
+}
+
 .noShow {
     display: none;
 }
