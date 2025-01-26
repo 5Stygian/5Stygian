@@ -7,6 +7,74 @@ body {
   margin: 0px;
 }
 
+table {
+  margin: 16px auto;
+}
+table .tableTitle {
+  color: rgb(235, 235, 235);
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+td {
+  min-width: 250px;
+  transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
+}
+
+td:hover {
+  transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
+  filter: brightness(115%) saturate(110%) hue-rotate(-15deg);
+}
+
+.tableNormal {
+  background-color: rgb(20, 20, 20);
+  box-shadow: -8px 0px 8px rgba(20, 20, 20, 0.2), 8px 0px 24px rgba(20, 20, 20, 0.2), 0px 8px 8px rgba(20, 20, 20, 0.2), 0px -8px 24px rgba(20, 20, 20, 0.2);
+}
+.tableNormal th {
+  background-color: rgb(24, 24, 24);
+  box-shadow: -8px 0px 8px rgba(24, 24, 24, 0.2), 8px 0px 24px rgba(24, 24, 24, 0.2), 0px 8px 8px rgba(24, 24, 24, 0.2), 0px -8px 24px rgba(24, 24, 24, 0.2);
+  margin: 2px;
+  padding: 2px 6px;
+  font-weight: bold;
+  text-align: center;
+}
+.tableNormal td {
+  background-color: rgb(24, 24, 24);
+  box-shadow: -8px 0px 8px rgba(24, 24, 24, 0.2), 8px 0px 24px rgba(24, 24, 24, 0.2), 0px 8px 8px rgba(24, 24, 24, 0.2), 0px -8px 24px rgba(24, 24, 24, 0.2);
+  margin: 2px;
+  padding: 2px 6px;
+  text-align: center;
+  min-width: 50px !important;
+}
+
+a:link {
+  color: rgb(54, 161, 214);
+  font-style: "Reddit Mono";
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(54, 161, 214);
+  filter: hue-rotate(-20deg);
+  font-style: "Reddit Mono";
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(54, 161, 214);
+  font-style: "Reddit Mono";
+  -webkit-text-decoration: wavy;
+          text-decoration: wavy;
+}
+
+a:active {
+  color: rgb(54, 161, 214);
+  font-style: "Reddit Mono";
+  filter: saturate(120%) brightness(110%);
+  text-decoration: underline;
+}
+
 #container {
   margin: auto;
   width: 55.555%;
@@ -57,74 +125,6 @@ body {
   background-color: rgba(7, 7, 7, 0.8);
   padding: 10px;
   margin: auto;
-}
-
-a:link {
-  color: rgb(54, 161, 214);
-  font-style: "Reddit Mono";
-  text-decoration: none;
-}
-
-a:visited {
-  color: rgb(54, 161, 214);
-  filter: hue-rotate(-20deg);
-  font-style: "Reddit Mono";
-  text-decoration: none;
-}
-
-a:hover {
-  color: rgb(54, 161, 214);
-  font-style: "Reddit Mono";
-  -webkit-text-decoration: wavy;
-          text-decoration: wavy;
-}
-
-a:active {
-  color: rgb(54, 161, 214);
-  font-style: "Reddit Mono";
-  filter: saturate(120%) brightness(110%);
-  text-decoration: underline;
-}
-
-table {
-  margin: 16px auto;
-}
-table .tableTitle {
-  color: rgb(235, 235, 235);
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-}
-
-td {
-  min-width: 250px;
-  transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
-}
-
-td:hover {
-  transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
-  filter: brightness(115%) saturate(110%) hue-rotate(-15deg);
-}
-
-.tableNormal {
-  background-color: rgb(20, 20, 20);
-  box-shadow: -8px 0px 8px rgba(20, 20, 20, 0.2), 8px 0px 24px rgba(20, 20, 20, 0.2), 0px 8px 8px rgba(20, 20, 20, 0.2), 0px -8px 24px rgba(20, 20, 20, 0.2);
-}
-.tableNormal th {
-  background-color: rgb(24, 24, 24);
-  box-shadow: -8px 0px 8px rgba(24, 24, 24, 0.2), 8px 0px 24px rgba(24, 24, 24, 0.2), 0px 8px 8px rgba(24, 24, 24, 0.2), 0px -8px 24px rgba(24, 24, 24, 0.2);
-  margin: 2px;
-  padding: 2px 6px;
-  font-weight: bold;
-  text-align: center;
-}
-.tableNormal td {
-  background-color: rgb(24, 24, 24);
-  box-shadow: -8px 0px 8px rgba(24, 24, 24, 0.2), 8px 0px 24px rgba(24, 24, 24, 0.2), 0px 8px 8px rgba(24, 24, 24, 0.2), 0px -8px 24px rgba(24, 24, 24, 0.2);
-  margin: 2px;
-  padding: 2px 6px;
-  text-align: center;
-  min-width: 50px !important;
 }
 
 .noShow {
