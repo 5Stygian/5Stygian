@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&family=Reddit+Sans+Condensed:wght@200..900&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap");
+body {
+  color: rgb(215, 215, 215);
+  background-color: rgb(28, 28, 28);
+  font-family: "Reddit Sans";
+  padding: 0px;
+  margin: 0px;
+}
+
+#container {
+  margin: auto;
+  width: 55.555%;
+  box-shadow: -8px 0px 8px rgba(24, 24, 24, 0.2), 8px 0px 24px rgba(24, 24, 24, 0.2);
+}
+#container .containerInner {
+  padding: 8px 16px;
+  background-color: rgb(24, 24, 24);
+}
+#container .containerInner h1 {
+  color: rgb(235, 235, 235);
+  font-family: "Reddit Sans";
+  font-weight: bold;
+}
+#container .containerInner .headerMain {
+  color: rgb(235, 235, 235);
+  font-family: "Reddit Sans Condensed";
+  font-weight: bold;
+  font-size: 3em;
+  padding: 0px 0px 8px 12px;
+}
+#container .containerInner .melonLandForum {
+  border: 1px solid rgb(237, 189, 0);
+  background-image: url(/images/fractal3.jpg);
+  background-attachment: scroll;
+  background-repeat: repeat-x;
+  background-size: cover;
+  font-family: "Times New Roman", Times, serif;
+  padding: 12px;
+}
+#container .containerInner .melonLandForum .melonLandForumInner {
+  border: 1px solid rgb(237, 189, 0);
+  background-color: rgba(7, 7, 7, 0.8);
+  padding: 10px;
+  margin: auto;
+}
+#container .containerInner .dzehnaBox {
+  border: 2px solid rgb(13, 104, 179);
+  background-image: url(/images/fractal1.jpg);
+  background-attachment: scroll;
+  background-repeat: repeat-x;
+  background-size: cover;
+  font-family: "Reddit Sans";
+  padding: 12px;
+}
+#container .containerInner .dzehnaBox .dzehnaBoxInner {
+  border: 2px solid rgb(13, 104, 179);
+  background-color: rgba(7, 7, 7, 0.8);
+  padding: 10px;
+  margin: auto;
+}
+#container .containerInner .imageBox {
+  border: 1.5px solid rgb(20, 20, 20);
+}
+#container .containerInner .imageBox img {
+  width: 100%;
+  height: auto;
+}
+#container .containerInner .imageBox p {
+  filter: brightness(80%);
+  padding: 12px;
+  text-align: center;
+  font-style: italic;
+}
+#container .containerInner .imageBox:hover {
+  border: 1.5px solid rgb(26, 26, 26);
+}
+
+a:link {
+  color: rgb(54, 161, 214);
+  font-style: "Reddit Mono";
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(54, 161, 214);
+  filter: hue-rotate(-20deg);
+  font-style: "Reddit Mono";
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(54, 161, 214);
+  font-style: "Reddit Mono";
+  -webkit-text-decoration: wavy;
+          text-decoration: wavy;
+}
+
+a:active {
+  color: rgb(54, 161, 214);
+  font-style: "Reddit Mono";
+  filter: saturate(120%) brightness(110%);
+  text-decoration: underline;
+}
+
+table {
+  margin: 16px auto;
+}
+table .tableTitle {
+  color: rgb(235, 235, 235);
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+td {
+  min-width: 250px;
+  transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
+}
+
+td:hover {
+  transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
+  filter: brightness(115%) saturate(110%) hue-rotate(-15deg);
+}
+
+.tableNormal {
+  background-color: rgb(20, 20, 20);
+  box-shadow: -8px 0px 8px rgba(20, 20, 20, 0.2), 8px 0px 24px rgba(20, 20, 20, 0.2), 0px 8px 8px rgba(20, 20, 20, 0.2), 0px -8px 24px rgba(20, 20, 20, 0.2);
+}
+.tableNormal th {
+  background-color: rgb(24, 24, 24);
+  box-shadow: -8px 0px 8px rgba(24, 24, 24, 0.2), 8px 0px 24px rgba(24, 24, 24, 0.2), 0px 8px 8px rgba(24, 24, 24, 0.2), 0px -8px 24px rgba(24, 24, 24, 0.2);
+  margin: 2px;
+  padding: 2px 6px;
+  font-weight: bold;
+  text-align: center;
+}
+.tableNormal td {
+  background-color: rgb(24, 24, 24);
+  box-shadow: -8px 0px 8px rgba(24, 24, 24, 0.2), 8px 0px 24px rgba(24, 24, 24, 0.2), 0px 8px 8px rgba(24, 24, 24, 0.2), 0px -8px 24px rgba(24, 24, 24, 0.2);
+  margin: 2px;
+  padding: 2px 6px;
+  text-align: center;
+  min-width: 50px !important;
+}
+
+.noShow {
+  filter: opacity(0%);
+}
+
+/*
+.collapsible {
+    background-color: rgb(238,238,238);
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+.active, 
+.collapsible:hover {
+    background-color: rgb(204,204,204);
+}
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: rgb(241,241,241);
+}
+.collapsible:after {
+    content: '\02795'; // unicode for plus sign "+"
+    font-size: 13px;
+    color: white;
+    float: right;
+    font-style: bold;
+    margin-left: 5px;
+}
+.active:after {
+    content: "\2796"; // unicode for minus sign "-"
+    font-style: bold;
+}
+*//*# sourceMappingURL=style.css.map */
