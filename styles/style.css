@@ -5,6 +5,7 @@ body {
   font-family: "Reddit Sans";
   padding: 0px;
   margin: 0px;
+  transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
 }
 
 table {
@@ -77,7 +78,7 @@ a:active {
 
 #container {
   margin: auto;
-  width: 55.555%;
+  width: 77.77777%;
   box-shadow: -8px 0px 8px rgba(24, 24, 24, 0.2), 8px 0px 24px rgba(24, 24, 24, 0.2);
 }
 #container .containerInner {
@@ -96,6 +97,20 @@ a:active {
   font-size: 3em;
   padding: 0px 0px 8px 12px;
 }
+#container .containerInner .headerSub {
+  color: rgb(235, 235, 235);
+  font-family: "Reddit Sans Condensed";
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-top: -40px;
+  padding: 0px 0px 8px 12px;
+}
+#container .containerInner .tableText {
+  overflow: scroll;
+  margin: 10px;
+  padding: 25px;
+  min-width: 50px !important;
+}
 #container .containerInner .melonLandForum {
   border: 1px solid rgb(237, 189, 0);
   background-image: url(/images/fractal3.jpg);
@@ -105,6 +120,7 @@ a:active {
   background-size: cover;
   font-family: "Times New Roman", Times, serif;
   padding: 12px;
+  display: block;
 }
 #container .containerInner .melonLandForum .melonLandForumInner {
   border: 1px solid rgb(237, 189, 0);
@@ -121,6 +137,7 @@ a:active {
   background-size: cover;
   font-family: "Reddit Sans";
   padding: 12px;
+  display: block;
 }
 #container .containerInner .dzehnaBox .dzehnaBoxInner {
   border: 2px solid rgb(13, 104, 179);
