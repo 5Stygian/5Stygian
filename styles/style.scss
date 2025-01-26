@@ -64,22 +64,6 @@ body {
                 margin: auto;
             }
         }
-        .imageBox {
-            border: 1.5px solid rgb(20,20,20);
-            img {
-                width: 100%;
-                height: auto;
-            }
-            p {
-                filter: brightness(80%);
-                padding: 12px;
-                text-align: center;
-                font-style: italic; 
-            }
-        }
-        .imageBox:hover {
-            border: 1.5px solid rgb(26,26,26);
-        }
     }
 }
 
