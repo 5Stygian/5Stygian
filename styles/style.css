@@ -108,8 +108,9 @@ a:active {
 #container .containerInner .tableText {
   overflow: scroll;
   margin: 10px;
-  padding: 25px;
+  padding: 25px 10px;
   min-width: 50px !important;
+  max-height: 200px;
 }
 #container .containerInner .melonLandForum {
   border: 1px solid rgb(237, 189, 0);
