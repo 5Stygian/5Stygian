@@ -58,22 +58,6 @@ body {
   padding: 10px;
   margin: auto;
 }
-#container .containerInner .imageBox {
-  border: 1.5px solid rgb(20, 20, 20);
-}
-#container .containerInner .imageBox img {
-  width: 100%;
-  height: auto;
-}
-#container .containerInner .imageBox p {
-  filter: brightness(80%);
-  padding: 12px;
-  text-align: center;
-  font-style: italic;
-}
-#container .containerInner .imageBox:hover {
-  border: 1.5px solid rgb(26, 26, 26);
-}
 
 a:link {
   color: rgb(54, 161, 214);
