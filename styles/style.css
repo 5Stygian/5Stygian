@@ -90,18 +90,18 @@ a:active {
   font-family: "Reddit Sans";
   font-weight: bold;
 }
-#container .containerInner .headerMain {
+#container .containerInner .headerDominant {
   color: rgb(235, 235, 235);
   font-family: "Reddit Sans Condensed";
   font-weight: bold;
   font-size: 3em;
   padding: 0px 0px 8px 12px;
 }
-#container .containerInner .headerSub {
+#container .containerInner .headerSubmissive {
   color: rgb(235, 235, 235);
   font-family: "Reddit Sans Condensed";
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.75em;
   margin-top: -40px;
   padding: 0px 0px 8px 12px;
 }
@@ -111,6 +111,7 @@ a:active {
   padding: 25px 10px;
   min-width: 50px !important;
   max-height: 200px;
+  border: 2px dotted rgb(128, 128, 128);
 }
 #container .containerInner .melonLandForum {
   border: 1px solid rgb(237, 189, 0);
@@ -149,6 +150,11 @@ a:active {
 
 .noShow {
   filter: opacity(0%);
+}
+
+.pageWalk {
+  margin: 32px 0px 20px 0px;
+  text-align: center;
 }
 
 @media only screen and (max-width: 1100px) {
