@@ -154,6 +154,23 @@ a:active {
                 margin: auto;
             }
         }
+        .codeBoxOnIndex {
+            border: 2px solid rgb(180,180,180);
+            background-image: url(/images/fractal2.jpg);
+            background-position: center; 
+            background-attachment: scroll;
+            background-repeat: repeat-x;
+            background-size: cover;
+            font-family: $fontNormal;
+            padding: 12px;
+            display: block;
+            .codeBoxOnIndexInner {
+                border: 2px solid rgb(180,180,180);
+                background-color: rgba(7,7,7,0.8);
+                padding: 10px;
+                margin: auto;
+            }
+        }
     }
 }
 
