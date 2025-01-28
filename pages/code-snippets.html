@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>5Stygian</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="/styles/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="container">
+        <div class="containerInner">
+            <h1 class="headerDominant">Code Snippets</h1>
+            <h2 class="headerSubmissive" style="font-style: italic;">ctrl + a, ctrl + c, ctrl + v</h2><!--italics because why not-->
+            <h1>Rusian Roulette Simulation</h1>
+            <h2 style="margin-top: -20px;">(Python)</h2>
+            <div class="codeBox">
+<span class="keyword">import</span> random <span class="keyword">as</span> rand 
+
+<span class="variable">shots</span> = <span class="number">0</span> 
+<span class="variable">rounds</span> = <span class="number">0</span> 
+<span class="variable">best</span> = <span class="number">0</span> 
+
+<span class="keyword">while True</span>: 
+    <span class="variable">shots</span> += <span class="number">1</span> 
+    <span class="variable">rounds</span> += <span class="number">1</span> 
+    <span class="variable">x</span> = rand.<span class="function">randint</span>(<span class="number">1</span>, <span class="number">6</span>) 
+    <span class="keyword">if</span> <span class="variable">x</span> == <span class="number">1</span>: 
+        <span class="keyword">if</span> <span class="variable">shots</span> > <span class="variable">best</span>: 
+        <span class="variable">best</span> = <span class="variable">shots</span> 
+        <span class="function">print</span>(<span class="function">str</span>(<span class="variable">rounds</span>) + <span class="string">": "</span> + <span class="function">str</span>(<span class="variable">best</span>)) 
+        <span class="function">print</span>(<span class="string">"============="</span>) 
+        <span class="variable">shots</span> = <span class="number">0</span> 
+    <span class="variable">shots</span> = <span class="number">0</span> 
+            </div>
+            <h3>Explanation</h3>
+            This Python script aims to simulate rounds of Russian Roulette by generating a random integer between 1 and 6. 
+            Then, the code checks if that number equal to 1. If it is, the code checks if the number of shots is greater than the highest number of shots. 
+            This essentially means that the bullet was shot the highest amount of times during the simulation's lifetime. 
+            It then prints the number of rounds simulated followed by the highest streak; with a divider line to seperate each entry. 
+            <br><br>
+            If you think the while True loop will cause your computer to explode, you can change it to something like this:
+            <div class="codeBox">
+<span class="keyword">while</span> <span class="varable">i</span> < <span class="number">1000000000</span>: <span class="comment">// The simulation will run 1 billion times</span> 
+            </div>
+            <h3>Credits</h3>
+            One of my friends from real life (who shall not be named (but I will link his GitHub)), <strong><a href="https://github.com/SUPERDERP1" target="_blank">SUPERDERP1</a></strong>
+            <div class="pageWalk">
+                <strong>⋘</strong> <a href="/index.html">Home</a> | <strong>Code Snippets</strong> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>

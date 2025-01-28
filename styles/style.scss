@@ -1,3 +1,4 @@
+// imports
 @import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&family=Reddit+Sans+Condensed:wght@200..900&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
 //fonts
 $fontNormal: 'Reddit Sans';
@@ -6,6 +7,9 @@ $fontConden: 'Reddit Sans Condensed';
 $fontClassic: 'Times New Roman', Times, serif;
 // animations
 $animationTransition1: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
+
+// filters
+$filterMain: brightness(115%) saturate(110%) hue-rotate(-15deg);
 
 body {
     color: rgb(215,215,215);
@@ -28,12 +32,13 @@ table {
 
 td {
     min-width: 250px;
-    transition: $animationTransition1;
+    //transition: $animationTransition1;
 }
 
 td:hover {
-    transition: $animationTransition1;
-    filter: brightness(115%) saturate(110%) hue-rotate(-15deg);
+    scrollbar-gutter: 0px; // idk what this does lol
+    //transition: $animationTransition1;
+    //filter: $filterMain;
 }
 
 .tableNormal {
@@ -114,10 +119,16 @@ a:active {
         .tableText {
             overflow: scroll;
             margin: 10px;
-            padding: 25px 10px;
+            padding: 8px 10px;
             min-width: 50px !important;
             max-height: 200px;
             border: 2px dotted rgb(128,128,128);
+            display: block;
+            transition: $animationTransition1;
+        }
+        .rightTableBox {
+            padding: 4px;
+            display: block;
         }
         .melonLandForum {
             border: 1px solid rgb(237,189,0);
@@ -130,6 +141,7 @@ a:active {
             font-family: $fontClassic;
             padding: 12px;
             display: block; // i have to include this because without it the div becomes bigger which looks weird
+            transition: $animationTransition1;
             .melonLandForumInner {
                 border: 1px solid rgb(237,189,0);
                 background-color: rgba(7,7,7,0.8);
@@ -146,7 +158,9 @@ a:active {
             background-size: cover;
             font-family: $fontNormal;
             padding: 12px;
+            margin-bottom: 6px;
             display: block;
+            transition: $animationTransition1;
             .dzehnaBoxInner {
                 border: 2px solid rgb(13,104,179);
                 background-color: rgba(7,7,7,0.8);
@@ -163,13 +177,55 @@ a:active {
             background-size: cover;
             font-family: $fontNormal;
             padding: 12px;
+            margin-top: 6px;
             display: block;
+            transition: $animationTransition1;
             .codeBoxOnIndexInner {
                 border: 2px solid rgb(180,180,180);
                 background-color: rgba(7,7,7,0.8);
                 padding: 10px;
                 margin: auto;
             }
+        }
+        .codeBox { // i copy pasted this from another thing i worked on. comments are from my friend. this porject was in css (gross) so i had to add in the new super awesome syntax script variable
+            color: rgb(190,190,190);
+            font-family: $fontMono;
+            background-color: rgb(41,46,56);
+            border: 2px solid rgba(34,34,34,0.8);
+            border-radius: 5.55555555px; // Ideas don't die.
+            max-width: 600px;
+            overflow: scroll;
+            white-space: pre;
+            padding: 0px 5.55555555px 0px; // What happened in 1976?
+            margin: 16px auto;
+            -ms-overflow-style: none;  // IE and Edge
+            scrollbar-width: none;  // Firefox 
+            transition: $animationTransition1; // i had to add this as a variable because i like them
+            span.keyword {
+                color: rgb(69,194,60);
+            }
+            span.variable {
+                color: rgb(73,184,218);
+            }
+            span.function {
+                color: rgb(245,158,66);
+            }
+            span.string {
+                color: rgb(226,128,56);
+            }
+            span.number {
+                color: rgb(168,50,113);
+            }
+            span.comment {
+                filter: brightness(70%);
+            }
+        }
+        .tableText:hover,
+        .melonLandForum:hover,
+        .dzehnaBox:hover,
+        .codeBoxOnIndex:hover {
+            transition: $animationTransition1;
+            filter: $filterMain;
         }
     }
 }
@@ -178,7 +234,7 @@ a:active {
     filter: opacity(0%);
 }
 
-.pageWalk { // idk why i have to put this here and nut under #container .containerInner lol
+.pageWalk { // idk why i have to put this here and not under #container .containerInner lol
     margin: 32px 0px 20px 0px;
     text-align: center;
 }
