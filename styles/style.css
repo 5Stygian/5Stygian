@@ -206,6 +206,9 @@ a:active {
 #container .containerInner .codeBox span.comment {
   filter: brightness(70%);
 }
+#container .containerInner span.highlight {
+  color: rgb(230, 227, 78);
+}
 #container .containerInner .tableText:hover,
 #container .containerInner .melonLandForum:hover,
 #container .containerInner .dzehnaBox:hover,
