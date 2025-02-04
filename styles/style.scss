@@ -124,6 +124,11 @@ a:active {
             text-wrap: pretty;
             p {
                 white-space: pre;
+                display: inline !important;
+                margin-top: 0 !important;
+                margin-bottom: 0 !important;
+                margin-left: 0;
+                margin-right: 0;
             }
         }
         .headerDominant {
