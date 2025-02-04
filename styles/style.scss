@@ -122,6 +122,9 @@ a:active {
             max-width: 250px;
             overflow: scroll;
             text-wrap: pretty;
+            p {
+                white-space: pre;
+            }
         }
         .headerDominant {
             color: rgb(235,235,235);
