@@ -7,5 +7,3 @@ function theReminder() {
     window.alert("You lost the game!\nThis is a 1 in 1 million chance\nCheck /scripts/thegame.js for confirmation");
   }
 }
-
-theReminder(); // Call the function when the website loads
