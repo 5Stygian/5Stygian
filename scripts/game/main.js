@@ -1,4 +1,6 @@
-const score = 0;
+let score;
+score = 0;
+
 document.getElementById("scoreCounter").innerHTML = score;
 
 function click() {
