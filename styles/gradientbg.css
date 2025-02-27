@@ -1,5 +1,0 @@
-body {
-    animation: gradientbg 2.7s linear 0s infinite alternate;
-    transition: all 6.2s cubic-bezier(0.24, 1.58, 0.37, 0.01);
-    background-image: radial-gradient();
-}
