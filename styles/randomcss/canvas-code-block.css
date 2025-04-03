@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+blockOuter {
+    margin: auto;
+}
+
+blockInner {
+    font: 'Roboto Mono';
+    color: #4F5B63;
+    border: 1.7px solid C8CDD2;
+    border-radius: 7px;
+    background-color: #F5F5F5;
+    padding: 6px;
+}
