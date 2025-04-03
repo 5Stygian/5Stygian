@@ -3,6 +3,7 @@
 .blockOuter {
     width: 65%;
     margin: auto;
+    padding: 0px;
 }
 
 .blockInner {
