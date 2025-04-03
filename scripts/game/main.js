@@ -1,8 +1,7 @@
-document.getElementById("scoreCounter").innerHTML = 0;
+let score = 0;
+document.getElementById("scoreCounter").innerHTML = score;
 
 function click() {
-    let score = 0;
-    
     score += 1;
     document.getElementById("scoreCounter").innerHTML = score;
 }
