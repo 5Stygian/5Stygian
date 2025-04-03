@@ -6,7 +6,7 @@
 }
 
 .blockInner {
-    font: "roboto mono";
+    font-family: "Roboto Mono";
     color: #4F5B63;
     border: 1.7px solid #C8CDD2;
     border-radius: 9px;
