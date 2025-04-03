@@ -6,12 +6,12 @@
 }
 
 .blockInner {
-    font: Roboto Mono;
+    font: "roboto mono";
     color: #4F5B63;
     border: 1.7px solid #C8CDD2;
-    border-radius: 7px;
+    border-radius: 9px;
     background-color: #F5F5F5;
-    padding: 6px;
+    padding: 14px;
     white-space: pre;
     overflow: scroll;
 }
