@@ -1,9 +1,55 @@
 @keyframes jiggling-it {
-    0% {}
+    0%   {
+        translate: transform(0px,0px);
+        font-size: 63px;
+    }
+    10%  {
+        translate: transform(2px,-1px);
+        font-size: 65px;
+    }
+    20%  {
+        translate: transform(-1.7px,-0.2px);
+        font-size: 62px;
+    }
+    30%  {
+        translate: transform(-1px,-3px);
+        font-size: 64px;
+    }
+    40%  {
+        translate: transform(1px,4px);
+        font-size: 62px;
+    }
+    50%  {
+        translate: transform(2px,3px);
+        font-size: 61px;
+    }
+    60%  {
+        translate: transform(-1px,0px);
+        font-size: 63px;
+    }
+    70%  {
+        translate: transform(3.2px,1.2px);
+        font-size: 64px;
+    }
+    80%  {
+        translate: transform(2.1px,0.5px);
+        font-size: 66px;
+    }
+    90%  {
+        translate: transform(-1.6px,0.2px);
+        font-size: 65px;
+    }
+    100% {
+        translate: transform(1px,-1.54px);
+        font-size: 62px;
+    }
 }
 
 .jigglingIt {
-    
+    animation: jiggling-it 4.2s linear infanite both;
+    margin: auto;
+    width: 100%;
+    font-size: 64px;
 }
 
 .pageWalk {
