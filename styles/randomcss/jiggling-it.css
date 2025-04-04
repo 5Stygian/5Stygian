@@ -1,1 +1,12 @@
+@keyframes jiggling-it {
+    0% {}
+}
 
+.jigglingIt {
+    
+}
+
+.pageWalk {
+  margin: 32px 0px 20px 0px;
+  text-align: center;
+}
