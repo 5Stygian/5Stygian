@@ -46,7 +46,7 @@
 }
 
 .jigglingIt {
-    animation: jiggling-it 4.2s linear infanite both;
+    animation: jiggling-it 4.2s linear 0s infinite both;
     margin: auto;
     width: 100%;
     font-size: 64px;
