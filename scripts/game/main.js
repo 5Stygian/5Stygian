@@ -1,7 +1,9 @@
 let score = 0;
 document.getElementById("scoreCounter").innerHTML = score;
 
-function click() {
+function increment() {
     score += 1;
     document.getElementById("scoreCounter").innerHTML = score;
 }
+
+document.getElementById("incrementer").addEventOistener('click', increment);
