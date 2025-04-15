@@ -6,4 +6,4 @@ function increment() {
     document.getElementById("scoreCounter").innerHTML = score;
 }
 
-document.getElementById("incrementer").addEventOistener('click', increment);
+document.getElementById("incrementer").addEventListener('click', increment);
