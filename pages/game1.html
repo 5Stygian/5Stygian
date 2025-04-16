@@ -7,30 +7,20 @@
     <link href="/styles/game/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body onload="theReminder()"> 
-    <div id="container">
-        <div class="containerInner">
-            <h1 class="headerDominant">game</h1>
-            <h2 class="headerSubmissive">the game</h2>
-            <p id="scoreCounter"></p>
-            <button id="incrementer" type="button">incrementer</button>
-            <div class="pageWalk">
-                <strong>⋘</strong> <a href="/index.html">Index</a> | <strong>Game</strong>
-            </div>
+    <div class="scoringWrapper">
+        <div class="scoreCounterWrapper">
+            <p id="scoreCounter" class="number"></p>
         </div>
+        <div class="incrementerWrapper">
+            <button id="incrementer" class="incrementer" type="button">Incrementer</button>
+        </div>
+    </div>
+    
+    <!--leave at bottom-->
+    <div class="pageWalk">
+        <strong>⋘</strong> <a href="/index.html">Index</a> | <strong>Game</strong>
     </div>
 <script src="/scripts/thegame.js"></script>
 <script src="/scripts/game/main.js"></script>
-<!--
-<script>
-document.getElementById("scoreCounter").innerHTML = 0;
-
-function click() {
-    let score = 0;
-    
-    score += 1;
-    document.getElementById("scoreCounter").innerHTML = score;
-}
-</script>
--->
 </body>
 </html>

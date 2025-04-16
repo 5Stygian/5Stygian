@@ -1,1 +1,73 @@
+// imports
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Geo:ital@0;1&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+// fonts
+$fontMain: 'Rubik';
+$fontNumber: 'Geo';
+$fontButton: 'DM Serif Text';
+// animation
+//// transition
+$transition1: all 0.6s cubic-bezier(0.46, 0.98, 0.41, 0.93);
+//// filter
+$filter1: brightness(115%) saturate(110%) hue-rotate(-15deg);
 
+body {
+    margin: 0;
+    color: rgb(20, 20, 20);
+    font-family: $fontMain;
+    font-size: 16px;
+}
+
+.pageWalk {
+    padding: 32px 0px 20px 0px;
+    text-align: center;
+}
+
+// SCORING
+.scoringWrapper {
+    border-bottom: 2px solid rgb(40, 40, 40);
+
+    .incrementerWrapper {
+        margin: 10px auto;
+        width: 50%;
+        text-align: center;
+        .incrementer {
+            min-width: 200px;
+            font-size: 24px;
+            font-family: $fontButton;
+            margin: 0 auto;
+            padding: 10px;
+            border-radius: 100px;
+            transition: $transition1;
+
+            &:hover {
+                transition: $transition1;
+                filter: $filter1;
+            }
+        }
+    }  
+
+    @mixin number {
+        font-family: $fontNumber;
+        font-size: 36px;
+    }
+
+    .scoreCounterWrapper {
+        margin: 0 auto;
+        width: 50%;
+        #scoreCounter {
+            @include number;
+            font-size: 36px;
+            margin: 0 25%;
+            text-align: center;
+        }
+    }
+
+    .number {
+        @include number;
+    }
+}
+
+// UPGRADES
+.upgradeWrapper {
+    // ill do this later lol
+}
