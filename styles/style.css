@@ -1,286 +1,281 @@
-// imports
-@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&family=Reddit+Sans+Condensed:wght@200..900&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
-//fonts
-$fontNormal: 'Reddit Sans';
-$fontMono: 'Reddit Mono';
-$fontConden: 'Reddit Sans Condensed';
-$fontClassic: 'Times New Roman', Times, serif;
-// animations
-$animationTransition1: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
-// filters
-$filterMain: brightness(115%) saturate(110%) hue-rotate(-15deg);
-
+@import url("https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&family=Reddit+Sans+Condensed:wght@200..900&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap");
 body {
-    color: rgb(215,215,215);
-    background-color: rgb(28,28,28);
-    font-family: $fontNormal;
-    padding: 0px;
-    margin: 0px;
-    transition: $animationTransition1;
+  color: rgb(215, 215, 215);
+  background-color: rgb(28, 28, 28);
+  font-family: "Reddit Sans";
+  padding: 0px;
+  margin: 0px;
+  transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
 }
 
 table {
-    margin: 16px auto;
-    .tableTitle {
-        color: rgb(235,235,235);
-        font-size: 20px;
-        font-weight: bold;
-        text-align: center;
-    }
+  margin: 16px auto;
+}
+table .tableTitle {
+  color: rgb(235, 235, 235);
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
 }
 
 td {
-    min-width: 250px;
-    //transition: $animationTransition1;
+  min-width: 250px;
 }
 
 td:hover {
-    scrollbar-gutter: 0px; // idk what this does lol
-    //transition: $animationTransition1;
-    //filter: $filterMain;
+  scrollbar-gutter: 0px;
 }
 
 .tableNormal {
-    background-color: rgb(20,20,20);
-    box-shadow: -8px 0px 8px rgba(20,20,20,0.2), 8px 0px 24px rgba(20,20,20,0.2), 0px 8px 8px rgba(20,20,20,0.2), 0px -8px 24px rgba(20,20,20,0.2);
-    th {
-        background-color: rgb(24,24,24);
-        box-shadow: -8px 0px 8px rgba(24,24,24,0.2), 8px 0px 24px rgba(24,24,24,0.2), 0px 8px 8px rgba(24,24,24,0.2), 0px -8px 24px rgba(24,24,24,0.2);
-        margin: 2px;
-        padding: 2px 6px;
-        font-weight: bold;
-        text-align: center;
-        //max-width: 100px !important;
-        border: 1px solid rgb(250,250,250);
-        transition: $animationTransition1;
-    }
-    td {
-        background-color: rgb(24,24,24);
-        box-shadow: -8px 0px 8px rgba(24,24,24,0.2), 8px 0px 24px rgba(24,24,24,0.2), 0px 8px 8px rgba(24,24,24,0.2), 0px -8px 24px rgba(24,24,24,0.2);
-        margin: 2px;
-        padding: 2px 6px;
-        text-align: center;
-        min-width: 50px !important;
-        border: 1px solid rgb(250,250,250);
-        transition: $animationTransition1;
-    }
-    .noShow:hover {
-        transition: $animationTransition1;
-        filter: $filterMain;
-    }
-    th:hover:not(.noShow),
-    td:hover:not(.noShow) { // i actually love the :not() pseudo class
-        transition: $animationTransition1;
-        border: 1px solid rgb(80,80,80);
-        cursor: default;
-    }
+  background-color: rgb(20, 20, 20);
+  box-shadow: -8px 0px 8px rgba(20, 20, 20, 0.2), 8px 0px 24px rgba(20, 20, 20, 0.2), 0px 8px 8px rgba(20, 20, 20, 0.2), 0px -8px 24px rgba(20, 20, 20, 0.2);
+}
+.tableNormal th {
+  background-color: rgb(24, 24, 24);
+  box-shadow: -8px 0px 8px rgba(24, 24, 24, 0.2), 8px 0px 24px rgba(24, 24, 24, 0.2), 0px 8px 8px rgba(24, 24, 24, 0.2), 0px -8px 24px rgba(24, 24, 24, 0.2);
+  margin: 2px;
+  padding: 2px 6px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid rgb(250, 250, 250);
+  transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
+}
+.tableNormal td {
+  background-color: rgb(24, 24, 24);
+  box-shadow: -8px 0px 8px rgba(24, 24, 24, 0.2), 8px 0px 24px rgba(24, 24, 24, 0.2), 0px 8px 8px rgba(24, 24, 24, 0.2), 0px -8px 24px rgba(24, 24, 24, 0.2);
+  margin: 2px;
+  padding: 2px 6px;
+  text-align: center;
+  min-width: 50px !important;
+  border: 1px solid rgb(250, 250, 250);
+  transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
+}
+.tableNormal .noShow:hover {
+  transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
+  filter: brightness(115%) saturate(110%) hue-rotate(-15deg);
+}
+.tableNormal th:hover:not(.noShow),
+.tableNormal td:hover:not(.noShow) {
+  transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
+  border: 1px solid rgb(80, 80, 80);
+  cursor: default;
 }
 
 a:link {
-    color: rgb(54,161,214);
-    font-style: $fontMono;
-    text-decoration: none;
+  color: rgb(54, 161, 214);
+  font-style: "Reddit Mono";
+  text-decoration: none;
 }
 
 a:visited {
-    color: rgb(54,161,214);
-    filter: hue-rotate(-20deg);
-    font-style: $fontMono;
-    text-decoration: none;
+  color: rgb(54, 161, 214);
+  filter: hue-rotate(-20deg);
+  font-style: "Reddit Mono";
+  text-decoration: none;
 }
 
 a:hover {
-    color: rgb(54,161,214);
-    font-style: $fontMono;
-    text-decoration: wavy;
+  color: rgb(54, 161, 214);
+  font-style: "Reddit Mono";
+  text-decoration: wavy;
 }
 
 a:active {
-    color: rgb(54,161,214);
-    font-style: $fontMono;
-    filter: saturate(120%) brightness(110%);
-    text-decoration: underline;
-}
-
-@mixin indexLinkBox {
-    background-position: center; 
-    background-attachment: scroll;
-    background-repeat: repeat-x;
-    background-size: cover;
-    font-family: $fontNormal;
-    padding: 12px;
-    margin-bottom: 6px;
-    display: block;
-    transition: $animationTransition1;
+  color: rgb(54, 161, 214);
+  font-style: "Reddit Mono";
+  filter: saturate(120%) brightness(110%);
+  text-decoration: underline;
 }
 
 #container {
-    margin: auto;
-    width: 77.77777%; // lucky number 7!
-    box-shadow: -8px 0px 8px rgba(24,24,24,0.2), 8px 0px 24px rgba(24,24,24,0.2);
-    .containerInner {
-        padding: 8px 16px;
-        background-color: rgb(24,24,24);
-        h1 {
-            color: rgb(235,235,235);
-            font-family: $fontNormal;
-            font-weight: bold;
-        }
-        dl {
-            margin-right: 40px;
-            padding: 12px;
-            border: 2px solid rgba(250,250,250,0.4);
-            max-width: 250px;
-            overflow: scroll;
-            text-wrap: pretty;
-            p {
-                white-space: pre;
-                display: inline !important;
-                margin-top: 0 !important;
-                margin-bottom: 0 !important;
-                margin-left: 0;
-                margin-right: 0;
-            }
-        }
-        .headerDominant {
-            color: rgb(235,235,235);
-            font-family: $fontConden;
-            font-weight: bold;
-            font-size: 3em;
-            padding: 0px 0px 8px 12px;
-        }
-        .headerSubmissive { // i could have called this headerSubmissive. you know what? ill do that
-            color: rgb(235,235,235);
-            font-family: $fontConden;
-            font-weight: bold;
-            font-size: 1.75em;
-            margin-top: -40px;
-            padding: 0px 0px 8px 12px;
-        }
-        .tableText {
-            overflow: scroll;
-            margin: 10px;
-            padding: 8px 10px;
-            min-width: 50px !important;
-            max-height: 200px;
-            border: 2px solid rgb(128,128,128);
-            display: block;
-            transition: $animationTransition1;
-        }
-        .rightTableBox {
-            padding: 4px;
-            display: block;
-        }
-        .melonLandForum {
-            border: 1px solid rgb(237,189,0);
-            //background-color: rgb(0,0,0);
-            background-image: url(/images/fractal3.jpg);
-            @include indexLinkBox;
-            .melonLandForumInner {
-                border: 1px solid rgb(237,189,0);
-                background-color: rgba(7,7,7,0.8);
-                padding: 10px;
-                margin: auto;
-            }
-        }
-        .dzehnaBox {
-            border: 2px solid rgb(13,104,179);
-            background-image: url(/images/fractal1.jpg);
-            @include indexLinkBox;
-            .dzehnaBoxInner {
-                border: 2px solid rgb(13,104,179);
-                background-color: rgba(7,7,7,0.8);
-                padding: 10px;
-                margin: auto;
-            }
-        }
-        .codeBoxOnIndex {
-            border: 2px solid rgb(180,180,180);
-            background-image: url(/images/fractal2.jpg);
-            @include indexLinkBox;
-            .codeBoxOnIndexInner {
-                border: 2px solid rgb(180,180,180);
-                background-color: rgba(7,7,7,0.8);
-                padding: 10px;
-                margin: auto;
-            }
-        }
-        .codeBox { // i copy pasted this from another thing i worked on. comments are from my friend. this porject was in css (gross) so i had to add in the new super awesome syntax script variable
-            color: rgb(190,190,190);
-            font-family: $fontMono;
-            background-color: rgb(41,46,56);
-            border: 2px solid rgba(34,34,34,0.8);
-            border-radius: 5.55555555px; // Ideas don't die.
-            max-width: 600px;
-            overflow: scroll;
-            white-space: pre;
-            padding: 0px 5.55555555px 0px; // What happened in 1976?
-            margin: 16px auto;
-            -ms-overflow-style: none;  // IE and Edge
-            scrollbar-width: none;  // Firefox 
-            transition: $animationTransition1; // i had to add this as a variable because i like them
-            span.keyword {
-                color: rgb(69,194,60);
-            }
-            span.variable {
-                color: rgb(73,184,218);
-            }
-            span.function {
-                color: rgb(245,158,66);
-            }
-            span.string {
-                color: rgb(226,128,56);
-            }
-            span.number {
-                color: rgb(168,50,113);
-            }
-            span.comment {
-                filter: brightness(70%);
-            }
-        }
-        span.highlight {
-            color: rgb(230,227,78);
-        }
-        .tableText:hover,
-        .melonLandForum:hover,
-        .dzehnaBox:hover,
-        .codeBoxOnIndex:hover {
-            transition: $animationTransition1;
-            filter: $filterMain;
-        }
-    }
+  margin: auto;
+  width: 77.77777%;
+  box-shadow: -8px 0px 8px rgba(24, 24, 24, 0.2), 8px 0px 24px rgba(24, 24, 24, 0.2);
+}
+#container .containerInner {
+  padding: 8px 16px;
+  background-color: rgb(24, 24, 24);
+}
+#container .containerInner h1 {
+  color: rgb(235, 235, 235);
+  font-family: "Reddit Sans";
+  font-weight: bold;
+}
+#container .containerInner dl {
+  margin-right: 40px;
+  padding: 12px;
+  border: 2px solid rgba(250, 250, 250, 0.4);
+  max-width: 250px;
+  overflow: scroll;
+  text-wrap: pretty;
+}
+#container .containerInner dl p {
+  white-space: pre;
+  display: inline !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  margin-left: 0;
+  margin-right: 0;
+}
+#container .containerInner .headerDominant {
+  color: rgb(235, 235, 235);
+  font-family: "Reddit Sans Condensed";
+  font-weight: bold;
+  font-size: 3em;
+  padding: 0px 0px 8px 12px;
+}
+#container .containerInner .headerSubmissive {
+  color: rgb(235, 235, 235);
+  font-family: "Reddit Sans Condensed";
+  font-weight: bold;
+  font-size: 1.75em;
+  margin-top: -40px;
+  padding: 0px 0px 8px 12px;
+}
+#container .containerInner .tableText {
+  overflow: scroll;
+  margin: 10px;
+  padding: 8px 10px;
+  min-width: 50px !important;
+  max-height: 200px;
+  border: 2px solid rgb(128, 128, 128);
+  display: block;
+  transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
+}
+#container .containerInner .rightTableBox {
+  padding: 4px;
+  display: block;
+}
+#container .containerInner .melonLandForum {
+  border: 1px solid rgb(237, 189, 0);
+  background-image: url(/images/fractal3.jpg);
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: repeat-x;
+  background-size: cover;
+  font-family: "Reddit Sans";
+  padding: 12px;
+  margin-bottom: 6px;
+  display: block;
+  transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
+}
+#container .containerInner .melonLandForum .melonLandForumInner {
+  border: 1px solid rgb(237, 189, 0);
+  background-color: rgba(7, 7, 7, 0.8);
+  padding: 10px;
+  margin: auto;
+}
+#container .containerInner .dzehnaBox {
+  border: 2px solid rgb(13, 104, 179);
+  background-image: url(/images/fractal1.jpg);
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: repeat-x;
+  background-size: cover;
+  font-family: "Reddit Sans";
+  padding: 12px;
+  margin-bottom: 6px;
+  display: block;
+  transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
+}
+#container .containerInner .dzehnaBox .dzehnaBoxInner {
+  border: 2px solid rgb(13, 104, 179);
+  background-color: rgba(7, 7, 7, 0.8);
+  padding: 10px;
+  margin: auto;
+}
+#container .containerInner .codeBoxOnIndex {
+  border: 2px solid rgb(180, 180, 180);
+  background-image: url(/images/fractal2.jpg);
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: repeat-x;
+  background-size: cover;
+  font-family: "Reddit Sans";
+  padding: 12px;
+  margin-bottom: 6px;
+  display: block;
+  transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
+}
+#container .containerInner .codeBoxOnIndex .codeBoxOnIndexInner {
+  border: 2px solid rgb(180, 180, 180);
+  background-color: rgba(7, 7, 7, 0.8);
+  padding: 10px;
+  margin: auto;
+}
+#container .containerInner .codeBox {
+  color: rgb(190, 190, 190);
+  font-family: "Reddit Mono";
+  background-color: rgb(41, 46, 56);
+  border: 2px solid rgba(34, 34, 34, 0.8);
+  border-radius: 5.55555555px;
+  max-width: 600px;
+  overflow: scroll;
+  white-space: pre;
+  padding: 0px 5.55555555px 0px;
+  margin: 16px auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
+}
+#container .containerInner .codeBox span.keyword {
+  color: rgb(69, 194, 60);
+}
+#container .containerInner .codeBox span.variable {
+  color: rgb(73, 184, 218);
+}
+#container .containerInner .codeBox span.function {
+  color: rgb(245, 158, 66);
+}
+#container .containerInner .codeBox span.string {
+  color: rgb(226, 128, 56);
+}
+#container .containerInner .codeBox span.number {
+  color: rgb(168, 50, 113);
+}
+#container .containerInner .codeBox span.comment {
+  filter: brightness(70%);
+}
+#container .containerInner span.highlight {
+  color: rgb(230, 227, 78);
+}
+#container .containerInner .tableText:hover,
+#container .containerInner .melonLandForum:hover,
+#container .containerInner .dzehnaBox:hover,
+#container .containerInner .codeBoxOnIndex:hover {
+  transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
+  filter: brightness(115%) saturate(110%) hue-rotate(-15deg);
 }
 
 .noShow {
-    filter: opacity(0%);
-    transition: $animationTransition1;
+  filter: opacity(0%);
+  transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
 }
 
 .noMake {
-    display: none;
-    transition: $animationTransition1;
+  display: none;
+  transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
 }
 
-.pageWalk { // idk why i have to put this here and not under #container .containerInner lol
-    margin: 32px 0px 20px 0px;
-    text-align: center;
+.pageWalk {
+  margin: 32px 0px 20px 0px;
+  text-align: center;
 }
 
 @media only screen and (max-width: 1100px) {
-    #container {
-        width: 100%;
-    }
+  #container {
+    width: 100%;
+  }
 }
-
 @media only screen and (max-width: 845px) {
-    #container {
-        width: 100%;
-    }
-    td {
-        min-width: 100px;
-    }
-    .tableText {
-        margin: 2px !important;
-        padding: 25px 10px !important;
-    }
-}/*# sourceMappingURL=style.css.map */
+  #container {
+    width: 100%;
+  }
+  td {
+    min-width: 100px;
+  }
+  .tableText {
+    margin: 2px !important;
+    padding: 25px 10px !important;
+  }
+}
