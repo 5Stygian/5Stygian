@@ -102,6 +102,18 @@ a:active {
     text-decoration: underline;
 }
 
+@mixin indexLinkBox {
+    background-position: center; 
+    background-attachment: scroll;
+    background-repeat: repeat-x;
+    background-size: cover;
+    font-family: $fontNormal;
+    padding: 12px;
+    margin-bottom: 6px;
+    display: block;
+    transition: $animationTransition1;
+}
+
 #container {
     margin: auto;
     width: 77.77777%; // lucky number 7!
@@ -151,7 +163,7 @@ a:active {
             padding: 8px 10px;
             min-width: 50px !important;
             max-height: 200px;
-            border: 2px dotted rgb(128,128,128);
+            border: 2px solid rgb(128,128,128);
             display: block;
             transition: $animationTransition1;
         }
@@ -163,14 +175,7 @@ a:active {
             border: 1px solid rgb(237,189,0);
             //background-color: rgb(0,0,0);
             background-image: url(/images/fractal3.jpg);
-            background-position: center; 
-            background-attachment: scroll;
-            background-repeat: repeat-x;
-            background-size: cover;
-            font-family: $fontClassic;
-            padding: 12px;
-            display: block; // i have to include this because without it the div becomes bigger which looks weird
-            transition: $animationTransition1;
+            @include indexLinkBox;
             .melonLandForumInner {
                 border: 1px solid rgb(237,189,0);
                 background-color: rgba(7,7,7,0.8);
@@ -181,15 +186,7 @@ a:active {
         .dzehnaBox {
             border: 2px solid rgb(13,104,179);
             background-image: url(/images/fractal1.jpg);
-            background-position: center; 
-            background-attachment: scroll;
-            background-repeat: repeat-x;
-            background-size: cover;
-            font-family: $fontNormal;
-            padding: 12px;
-            margin-bottom: 6px;
-            display: block;
-            transition: $animationTransition1;
+            @include indexLinkBox;
             .dzehnaBoxInner {
                 border: 2px solid rgb(13,104,179);
                 background-color: rgba(7,7,7,0.8);
@@ -200,15 +197,7 @@ a:active {
         .codeBoxOnIndex {
             border: 2px solid rgb(180,180,180);
             background-image: url(/images/fractal2.jpg);
-            background-position: center; 
-            background-attachment: scroll;
-            background-repeat: repeat-x;
-            background-size: cover;
-            font-family: $fontNormal;
-            padding: 12px;
-            margin-top: 6px;
-            display: block;
-            transition: $animationTransition1;
+            @include indexLinkBox;
             .codeBoxOnIndexInner {
                 border: 2px solid rgb(180,180,180);
                 background-color: rgba(7,7,7,0.8);
