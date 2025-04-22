@@ -1,49 +1,60 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Geo:ital@0;1&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
 body {
-  margin: 0;
-  color: rgb(20, 20, 20);
-  font-family: "Rubik";
-  font-size: 16px;
+	margin: 0;
+	color: #141414;
+	font-family: "Rubik";
+	font-size: 16px;
 }
 
 .pageWalk {
-  padding: 32px 0px 20px 0px;
-  text-align: center;
+	padding: 32px 0px 20px 0px;
+	text-align: center;
 }
 
 .scoringWrapper {
-  border-bottom: 2px solid rgb(40, 40, 40);
+	border-bottom: 2px solid #282828;
 }
+
 .scoringWrapper .incrementerWrapper {
-  margin: 10px auto;
-  width: 50%;
-  text-align: center;
+	margin: 10px auto;
+	width: 50%;
+	text-align: center;
 }
+
 .scoringWrapper .incrementerWrapper .incrementer {
-  min-width: 200px;
-  font-size: 24px;
-  font-family: "DM Serif Text";
-  margin: 0 auto;
-  padding: 10px;
-  border-radius: 100px;
-  transition: all 0.6s cubic-bezier(0.46, 0.98, 0.41, 0.93);
+	color: black;
+	background-color: #909090;
+	min-width: 200px;
+	font-size: 24px;
+	font-family: "DM Serif Text";
+	margin: 0 auto;
+	padding: 10px;
+	border: 2px inset #ebebeb;
+	border-radius: 100px;
+	transition: all 0.6s cubic-bezier(0.46, 0.98, 0.41, 0.93);
 }
+
 .scoringWrapper .incrementerWrapper .incrementer:hover {
-  transition: all 0.6s cubic-bezier(0.46, 0.98, 0.41, 0.93);
-  filter: brightness(115%) saturate(110%) hue-rotate(-15deg);
+	transition: all 0.6s cubic-bezier(0.46, 0.98, 0.41, 0.93);
+	filter: brightness(115%) saturate(110%) hue-rotate(-15deg);
+	border: 2px outset #5a5a5a;
 }
+
 .scoringWrapper .scoreCounterWrapper {
-  margin: 0 auto;
-  width: 50%;
+	margin: 0 auto;
+	width: 50%;
 }
+
 .scoringWrapper .scoreCounterWrapper #scoreCounter {
-  font-family: "Geo";
-  font-size: 36px;
-  font-size: 36px;
-  margin: 0 25%;
-  text-align: center;
+	font-family: "Geo";
+	font-size: 36px;
+	font-size: 36px;
+	margin: 0 25%;
+	text-align: center;
 }
+
 .scoringWrapper .number {
-  font-family: "Geo";
-  font-size: 36px;
+	font-family: "Geo";
+	font-size: 36px;
 }/*# sourceMappingURL=style.css.map */
