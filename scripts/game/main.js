@@ -2,6 +2,7 @@
 let incrementAmount = 1;
 let score = 0;
 document.getElementById("scoreCounter").innerHTML = score;
+let upgradeCostScaling = 1.15;
 
 // INCREMENTER
 function increment() {
