@@ -75,17 +75,30 @@ body {
 	text-align: center;
 }
 
+.upgradeWrapperWrapper .upgradeWrapper .upgradeText {
+	display: inline;
+	font-weight: bold;
+	margin: 0px !important;
+	left: 0;
+}
+
 .upgradeWrapperWrapper .upgradeWrapper .incrementIncrementer {
 	color: black;
 	background-color: #c7c7c7;
 	font-family: "DM Serif Text";
-	fomt-size: 24px;
+	font-size: 24px;
 	transition: all 0.6s cubic-bezier(0.46, 0.98, 0.41, 0.93);
 	border: 2px inset #ebebeb;
 	border-radius: 0px;
 }
 
-.upgradeWrapperWrapper .upgradeWrapper .upgradeIncrementer:hover {
+.upgradeWrapperWrapper .upgradeWrapper .incrementIncrementer:hover {
 	transition: all 0.6s cubic-bezier(0.46, 0.98, 0.41, 0.93);
 	filter: brightness(115%) saturate(110%) hue-rotate(-15deg);
+}
+
+.upgradeWrapperWrapper .upgradeWrapper .incrementIncrementer #incrementIncrementerCostCount {
+	font-family: "Geo";
+	font-size: 36px;
+	vertical-align: baseline;
 }/*# sourceMappingURL=style.css.map */
