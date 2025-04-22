@@ -25,19 +25,23 @@ body {
 .scoringWrapper .incrementerWrapper .incrementer {
 	color: black;
 	background-color: #c7c7c7;
-	min-width: 200px;
-	font-size: 24px;
 	font-family: "DM Serif Text";
+	fomt-size: 24px;
+	transition: all 0.6s cubic-bezier(0.46, 0.98, 0.41, 0.93);
+	border: 2px inset #ebebeb;
+	min-width: 200px;
 	margin: 0 auto;
 	padding: 10px;
-	border: 2px inset #ebebeb;
 	border-radius: 100px;
-	transition: all 0.6s cubic-bezier(0.46, 0.98, 0.41, 0.93);
+	border: 2px inset #ebebeb;
 }
 
 .scoringWrapper .incrementerWrapper .incrementer:hover {
 	transition: all 0.6s cubic-bezier(0.46, 0.98, 0.41, 0.93);
 	filter: brightness(115%) saturate(110%) hue-rotate(-15deg);
+}
+
+.scoringWrapper .incrementerWrapper .incrementer:hover {
 	border: 2px outset #5a5a5a;
 }
 
@@ -59,8 +63,29 @@ body {
 	font-size: 36px;
 }
 
+.upgradeWrapperWrapper {
+	border-right: 2px solid #282828;
+	left: 0;
+	width: 70%;
+}
+
 .upgradeWrapperWrapper .upgradeWrapper {
 	margin: 10px auto;
 	width: 50%;
 	text-align: center;
+}
+
+.upgradeWrapperWrapper .upgradeWrapper .upgradeIncrementer {
+	color: black;
+	background-color: #c7c7c7;
+	font-family: "DM Serif Text";
+	fomt-size: 24px;
+	transition: all 0.6s cubic-bezier(0.46, 0.98, 0.41, 0.93);
+	border: 2px inset #ebebeb;
+	border-radius: 0px;
+}
+
+.upgradeWrapperWrapper .upgradeWrapper .upgradeIncrementer:hover {
+	transition: all 0.6s cubic-bezier(0.46, 0.98, 0.41, 0.93);
+	filter: brightness(115%) saturate(110%) hue-rotate(-15deg);
 }/*# sourceMappingURL=style.css.map */
