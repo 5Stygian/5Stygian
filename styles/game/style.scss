@@ -93,10 +93,22 @@ body {
     
     .upgradeWrapper {
         @include wrapper;
+
+        .upgradeText {
+            display: inline;
+            font-weight: bold;
+            margin: 0px !important;
+            left: 0;
+        }
         
         .incrementIncrementer {
             @include button;
             border-radius: 0px;
+
+            #incrementIncrementerCostCount {
+                @include number;
+                vertical-align: baseline;
+            }
         }
     }
 }
