@@ -1,8 +1,16 @@
-// Set elements
-let incrementAmount = 1;
+/*========================GARBLED NONSESE=======================================================================================
+After thoroughly reading through this file, any form of the word "increment" may loose meaning for a random amount of time.
+This warning is not to be ignored.
+==============================================================================================================================*/
+
+// Set variables
 let score = 0;
-document.getElementById("scoreCounter").innerHTML = score;
+let incrementAmount = 1;
+let incrementIncrementerCost = 25;
 let upgradeCostScaling = 1.15;
+
+// Set elements
+document.getElementById("scoreCounter").innerHTML = score;
 
 // INCREMENTER
 function increment() {
@@ -11,10 +19,13 @@ function increment() {
     document.getElementById("scoreCounter").innerHTML = score;
     console.log(manualIncrementLog)
 }
-
 document.getElementById("incrementer").addEventListener('click', increment);
 
 // UPGRADES
-function upgradeIncrementer() {
-    incrementAmount += 1;
+function incrementIncrementer() {
+    if (score >= upgradeIncementerCost) {
+        incrementIncementerCost *= upgradeCostScaling;
+        incrementAmount += 1;
+    }
 }
+document.getElementById("incrementIncrementer").addEventListener('click', incrementIncrementer);
