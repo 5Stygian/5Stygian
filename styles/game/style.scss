@@ -94,7 +94,7 @@ body {
     .upgradeWrapper {
         @include wrapper;
         
-        .upgradeIncrementer {
+        .incrementIncrementer {
             @include button;
             border-radius: 0px;
         }
