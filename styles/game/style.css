@@ -57,4 +57,10 @@ body {
 .scoringWrapper .number {
 	font-family: "Geo";
 	font-size: 36px;
+}
+
+.upgradeWrapperWrapper .upgradeWrapper {
+	margin: 10px auto;
+	width: 50%;
+	text-align: center;
 }/*# sourceMappingURL=style.css.map */
