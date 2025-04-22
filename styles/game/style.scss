@@ -22,14 +22,24 @@ body {
     text-align: center;
 }
 
+// MIXINS
+@mixin number {
+    font-family: $fontNumber;
+    font-size: 36px;
+}
+
+@mixin wrapper {
+    margin: 10px auto;
+    width: 50%;
+    text-align: center;  
+}
+
 // SCORING
 .scoringWrapper {
     border-bottom: 2px solid rgb(40, 40, 40);
 
     .incrementerWrapper {
-        margin: 10px auto;
-        width: 50%;
-        text-align: center;
+        @include wrapper;
         .incrementer {
             color: black;
             background-color: rgb(199, 199, 199);
@@ -50,11 +60,6 @@ body {
         }
     }  
 
-    @mixin number {
-        font-family: $fontNumber;
-        font-size: 36px;
-    }
-
     .scoreCounterWrapper {
         margin: 0 auto;
         width: 50%;
@@ -72,6 +77,13 @@ body {
 }
 
 // UPGRADES
-.upgradeWrapper {
-    // ill do this later lol
+.upgradeWrapperWrapper {
+    // fill out later
+    .upgradeWrapper {
+        @include wrapper;
+        
+        .upgradeIncrementer {
+            // fill out later
+        }
+    }
 }
