@@ -1,5 +1,14 @@
 // imports
-@import url('https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Geo:ital@0;1&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+// fonts
+$fontMain: 'Rubik';
+$fontButton: 'DM Serif Text';
+$fontNumber: 'Geo';
+// animations
+//// transitions
+$transition1: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
+//// filters
+$filter1: brightness(115%) saturate(110%) hue-rotate(-15deg);
 
 .pageWalk { // use at the bottom of the page
     padding: 32px 0px 20px 0px;
