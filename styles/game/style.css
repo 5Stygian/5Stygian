@@ -1,5 +1,84 @@
-@import url("https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Geo:ital@0;1&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+body {
+  margin: 0;
+  color: rgb(20, 20, 20);
+  font-family: "Rubik";
+  font-size: 16px;
+}
+
 .pageWalk {
   padding: 32px 0px 20px 0px;
   text-align: center;
+}
+
+.scoringWrapper {
+  border-bottom: 2px solid rgb(40, 40, 40);
+}
+.scoringWrapper .incrementorWrapper {
+  margin: 10px auto;
+  width: 50%;
+  text-align: center;
+}
+.scoringWrapper .incrementorWrapper .incrementor {
+  color: black;
+  background-color: rgb(199, 199, 199);
+  font-family: "DM Serif Text";
+  font-size: 16px;
+  transition: all 0.6s cubic-bezier(0.46, 0.98, 0.41, 0.93);
+  border: 2px inset rgb(235, 235, 235);
+  font-size: 24px !important;
+  min-width: 200px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 100px;
+  border: 2px inset rgb(235, 235, 235);
+}
+.scoringWrapper .incrementorWrapper .incrementor:hover {
+  transition: all 0.6s cubic-bezier(0.46, 0.98, 0.41, 0.93);
+  filter: brightness(115%) saturate(110%) hue-rotate(-15deg);
+}
+.scoringWrapper .incrementorWrapper .incrementor:hover {
+  border: 2px outset rgb(90, 90, 90);
+}
+.scoringWrapper .scoreCounterWrapper {
+  margin: 0 auto;
+  width: 50%;
+}
+.scoringWrapper .scoreCounterWrapper #scoreCounter {
+  font-family: "Geo";
+  font-size: 36px;
+  font-size: 36px;
+  margin: 0 25%;
+  text-align: center;
+}
+.scoringWrapper .number {
+  font-family: "Geo";
+  font-size: 36px;
+}
+
+.upgradeWrapperWrapper {
+  padding: 10px;
+  width: 70%;
+  border-right: 2px solid rgb(40, 40, 40);
+}
+.upgradeWrapperWrapper .upgradeWrapper {
+  margin: 10px auto;
+  width: 50%;
+  background-color: rgb(199, 199, 199);
+  padding: 7px 5px;
+}
+.upgradeWrapperWrapper .upgradeWrapper .incrementIncrementor {
+  color: black;
+  background-color: rgb(199, 199, 199);
+  font-family: "DM Serif Text";
+  font-size: 16px;
+  transition: all 0.6s cubic-bezier(0.46, 0.98, 0.41, 0.93);
+  border: 2px inset rgb(235, 235, 235);
+}
+.upgradeWrapperWrapper .upgradeWrapper .incrementIncrementor:hover {
+  transition: all 0.6s cubic-bezier(0.46, 0.98, 0.41, 0.93);
+  filter: brightness(115%) saturate(110%) hue-rotate(-15deg);
+}
+.upgradeWrapperWrapper .upgradeWrapper .incrementIncrementor #incrementIncrementorCostCounter {
+  vertical-align: baseline;
 }/*# sourceMappingURL=style.css.map */

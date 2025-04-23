@@ -5,3 +5,89 @@
     padding: 32px 0px 20px 0px;
     text-align: center;
 }
+
+// MIXINS
+@mixin number {
+    font-family: $fontNumber;
+    font-size: 36px;
+}
+
+@mixin wrapper {
+    margin: 10px auto;
+    width: 50%;
+    //text-align: center;  
+}
+
+@mixin button {
+    color: black;
+    background-color: rgb(199, 199, 199);
+    font-family: $fontButton;
+    font-size: 16px;
+    transition: $transition1;
+    border: 2px inset rgb(235, 235, 235);
+
+    &:hover {
+        transition: $transition1;
+        filter: $filter1;
+    }
+}
+
+// SCORING
+.scoringWrapper {
+    border-bottom: 2px solid rgb(40, 40, 40);
+
+    .incrementorWrapper {
+        @include wrapper;
+        text-align: center;
+
+        .incrementor {
+            @include button;
+            font-size: 24px !important;
+            min-width: 200px;
+            margin: 0 auto;
+            padding: 10px;
+            border-radius: 100px;
+            border: 2px inset rgb(235, 235, 235);
+
+            &:hover {
+                border: 2px outset rgb(90, 90, 90);
+            }
+        }
+    }  
+
+    .scoreCounterWrapper {
+        margin: 0 auto;
+        width: 50%;
+        #scoreCounter {
+            @include number;
+            font-size: 36px;
+            margin: 0 25%;
+            text-align: center;
+        }
+    }
+
+    .number {
+        @include number;
+    }
+}
+
+// UPGRADES
+.upgradeWrapperWrapper {
+    padding: 10px;
+    width: 70%;
+    border-right: 2px solid rgb(40, 40, 40);
+
+    .upgradeWrapper {
+        @include wrapper;
+        background-color: rgb(199, 199, 199);
+        padding: 7px 5px;
+
+        .incrementIncrementor {
+            @include button;
+
+            #incrementIncrementorCostCounter {
+                vertical-align: baseline;
+            }
+        }
+    }
+}

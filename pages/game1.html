@@ -7,15 +7,18 @@
     <link href="/styles/game/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body onload="theReminder()"> 
-    <div id="container">
-        <div class="containerInner">
-            <h1 class="headerDominant">game</h1>
-            <h2 class="headerSubmissive">the game</h2>
-            <p id="scoreCounter"></p>
-            <button id="incrementer" type="button">incrementer</button>
-            <div class="pageWalk">
-                <strong>⋘</strong> <a href="/index.html">Index</a> | <strong>Game</strong>
-            </div>
+    <div class="scoringWrapper">
+        <div class="scoreCounterWrapper">
+            <p id="scoreCounter" class="number"></p>
+        </div>
+        <div class="incrementorWrapper">
+            <button id="incrementor" class="incrementor" type="button">Incrementor</button>
+        </div>
+    </div>
+    <div class="upgradeWrapperWrapper">
+        <div class="upgradeWrapper">
+            <button class="incrementIncrementor">Upgrade Incrementor</button>
+            <p id="incrementIncrementorCostCounter">
         </div>
     </div>
 <script src="/scripts/thegame.js"></script>
