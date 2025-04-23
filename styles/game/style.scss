@@ -10,6 +10,11 @@ $transition1: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
 //// filters
 $filter1: brightness(115%) saturate(110%) hue-rotate(-15deg);
 
+body {
+    font-family: $fontMain;
+    margin: 0px;
+}
+
 .pageWalk { // use at the bottom of the page
     padding: 32px 0px 20px 0px;
     text-align: center;
@@ -24,7 +29,6 @@ $filter1: brightness(115%) saturate(110%) hue-rotate(-15deg);
 @mixin wrapper {
     margin: 10px auto;
     width: 50%;
-    //text-align: center;  
 }
 
 @mixin button {
@@ -89,7 +93,7 @@ $filter1: brightness(115%) saturate(110%) hue-rotate(-15deg);
     .upgradeWrapper {
         @include wrapper;
         background-color: rgb(199, 199, 199);
-        padding: 7px 5px;
+        padding: 5px 7px;
 
         .incrementIncrementor {
             @include button;
