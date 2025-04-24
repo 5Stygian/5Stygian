@@ -6,12 +6,17 @@ This warning is not to be ignored.
 // Set variables
 let score = 0;
 let incrementAmount = 1;
-let incrementIncrementorCost = 25;
 let upgradeCostScaling = 1.25;
+
+let incrementIncrementorCost = 25;
+let constantIncrementor1Cost = 100;
+
+let constantIncrementor1Amount = 0;
 
 // Set elements
 document.getElementById("scoreCounter").innerHTML = score;
 document.getElementById("incrementIncrementorCostCounter").innerHTML = incrementIncrementorCost;
+document.getElementById("constantIncrementor1CostCounter").innerHTML = constantIncrementor1Cost;
 
 // INCREMENTOR
 function increment() {
@@ -21,7 +26,7 @@ function increment() {
 }
 document.getElementById("incrementor").addEventListener('click', increment);
 
-// UPGRADES
+// INCREMENTS (upgrades)
 function incrementIncrementor() {
     if (score >= incrementIncrementorCost) {
         incrementAmount += 1;
@@ -38,3 +43,24 @@ function incrementIncrementor() {
     }
 }
 document.getElementById("incrementIncrementor").addEventListener('click', incrementIncrementor);
+
+// FACTORIES
+function incrementConstantIncrementor1() {
+    if (score >= constantIncrementor1Cost) {
+        constantIncrementor1Amount += 1;
+        score -= constantIncrementor1Cost;
+        constantIncrementor1Cost *= upgradeCostScaling;
+        score = Math.round(score);
+        constantIncrementor1Cost = Math.round(constantIncrementor1Cost);
+        document.getElementById("constantIncrementor1CostCounter").innerHTML = constantIncrementor1Cost;
+        document.getElementById("scoreCounter").innerHTML = score;
+        console.log("Increment constant incrementor 1");
+    }
+    else {
+        console.log("Insufficient score to increment constant incrementor 1");
+    }
+}
+document.getElementById("consantIncrementor1").addEventListener('click', incrementConstantIncrementor1);
+
+function mainloop() {
+}
