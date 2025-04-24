@@ -93,6 +93,7 @@ body {
     .upgradeWrapper {
         @include wrapper;
         padding: 8px 16px;
+        max-width: 300px;
         //background-color: rgb(201, 33, 33); // show padding 
 
         .incrementIncrementor {

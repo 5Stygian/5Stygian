@@ -7,7 +7,7 @@ This warning is not to be ignored.
 let score = 0;
 let incrementAmount = 1;
 let incrementIncrementorCost = 25;
-let upgradeCostScaling = 1.15;
+let upgradeCostScaling = 1.25;
 
 // Set elements
 document.getElementById("scoreCounter").innerHTML = score;
@@ -15,19 +15,26 @@ document.getElementById("incrementIncrementorCostCounter").innerHTML = increment
 
 // INCREMENTOR
 function increment() {
-    score += 1;
+    score += incrementAmount;
     document.getElementById("scoreCounter").innerHTML = score;
-    console.log("")
+    console.log("Increment score");
 }
 document.getElementById("incrementor").addEventListener('click', increment);
 
 // UPGRADES
 function incrementIncrementor() {
-    if (score >= upgradeIncrementorCost) {
-        incrementIncrementorCost *= upgradeCostScaling;
+    if (score >= incrementIncrementorCost) {
         incrementAmount += 1;
         score -= incrementIncrementorCost;
+        incrementIncrementorCost *= upgradeCostScaling;
+        score = Math.round(score);
+        incrementIncrementorCost = Math.round(incrementIncrementorCost);
         document.getElementById("incrementIncrementorCostCounter").innerHTML = incrementIncrementorCost;
+        document.getElementById("scoreCounter").innerHTML = score;
+        console.log("Incrementor incremented");
+    }
+    else {
+        console.log("Insufficient score to increment incrementor");
     }
 }
 document.getElementById("incrementIncrementor").addEventListener('click', incrementIncrementor);
