@@ -1,88 +1,104 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Geo:ital@0;1&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
 body {
-  font-family: "Rubik";
-  margin: 0px;
+	font-family: "Rubik";
+	margin: 0px;
 }
 
 .pageWalk {
-  padding: 32px 0px 20px 0px;
-  text-align: center;
+	padding: 32px 0px 20px 0px;
+	text-align: center;
 }
 
 .scoringWrapper {
-  border-bottom: 2px solid rgb(40, 40, 40);
+	border-bottom: 2px solid #282828;
 }
+
 .scoringWrapper .incrementorWrapper {
-  margin: 10px auto;
-  width: 50%;
-  text-align: center;
+	margin: 10px auto;
+	width: 50%;
+	text-align: center;
 }
+
 .scoringWrapper .incrementorWrapper .incrementor {
-  color: black;
-  background-color: rgb(199, 199, 199);
-  font-family: "DM Serif Text";
-  font-size: 16px;
-  transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
-  border: 2px inset rgb(235, 235, 235);
-  font-size: 24px !important;
-  min-width: 200px;
-  margin: 0 auto;
-  padding: 10px;
-  border-radius: 100px;
-  border: 2px inset rgb(235, 235, 235);
+	color: black;
+	background-color: #c7c7c7;
+	font-family: "DM Serif Text";
+	font-size: 16px;
+	transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
+	border: 2px inset #ebebeb;
+	font-size: 24px !important;
+	min-width: 200px;
+	margin: 0 auto;
+	padding: 10px;
+	border-radius: 100px;
+	border: 2px inset #ebebeb;
 }
+
 .scoringWrapper .incrementorWrapper .incrementor:hover {
-  transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
-  filter: brightness(115%) saturate(110%) hue-rotate(-15deg);
+	transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
+	filter: brightness(115%) saturate(110%) hue-rotate(-15deg);
 }
+
 .scoringWrapper .incrementorWrapper .incrementor:hover {
-  border: 2px outset rgb(90, 90, 90);
+	border: 2px outset #5a5a5a;
 }
+
 .scoringWrapper .scoreCounterWrapper {
-  margin: 0 auto;
-  width: 50%;
+	margin: 0 auto;
+	width: 50%;
 }
+
 .scoringWrapper .scoreCounterWrapper #scoreCounter {
-  font-family: "DM Serif Text";
-  font-size: 24px;
-  font-size: 36px;
-  margin: 0 25%;
-  text-align: center;
+	font-family: "DM Serif Text";
+	font-size: 24px;
+	font-size: 36px;
+	margin: 0 25%;
+	text-align: center;
 }
+
+.scoringWrapper .scoreCounterWrapper #scoreCounter:before {
+	content: S;
+}
+
 .scoringWrapper .number {
-  font-family: "DM Serif Text";
-  font-size: 24px;
+	font-family: "DM Serif Text";
+	font-size: 24px;
 }
 
 .upgradeWrapperWrapper {
-  padding: 10px;
-  width: 70%;
-  border-right: 2px solid rgb(40, 40, 40);
+	padding: 10px;
+	width: 70%;
+	border-right: 2px solid #282828;
 }
+
 .upgradeWrapperWrapper .upgradeWrapper {
-  margin: 10px auto;
-  width: 50%;
-  padding: 8px 16px;
-  max-width: 300px;
+	margin: 10px auto;
+	width: 50%;
+	padding: 8px 16px;
+	max-width: 300px;
 }
+
 .upgradeWrapperWrapper .upgradeWrapper .incrementIncrementor {
-  color: black;
-  background-color: rgb(199, 199, 199);
-  font-family: "DM Serif Text";
-  font-size: 16px;
-  transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
-  border: 2px inset rgb(235, 235, 235);
-  display: inline-block;
-  padding: 4px;
+	color: black;
+	background-color: #c7c7c7;
+	font-family: "DM Serif Text";
+	font-size: 16px;
+	transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
+	border: 2px inset #ebebeb;
+	display: inline-block;
+	padding: 4px;
 }
+
 .upgradeWrapperWrapper .upgradeWrapper .incrementIncrementor:hover {
-  transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
-  filter: brightness(115%) saturate(110%) hue-rotate(-15deg);
+	transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
+	filter: brightness(115%) saturate(110%) hue-rotate(-15deg);
 }
+
 .upgradeWrapperWrapper .upgradeWrapper #incrementIncrementorCostCounter {
-  font-family: "DM Serif Text";
-  font-size: 24px;
-  margin: 0;
-  display: inline;
-  float: right;
+	font-family: "DM Serif Text";
+	font-size: 24px;
+	margin: 0;
+	display: inline;
+	float: right;
 }/*# sourceMappingURL=style.css.map */
