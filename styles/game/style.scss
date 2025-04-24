@@ -3,7 +3,7 @@
 // fonts
 $fontMain: 'Rubik';
 $fontButton: 'DM Serif Text';
-$fontNumber: 'Geo';
+$fontNumber: $fontButton;
 // animations
 //// transitions
 $transition1: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
@@ -23,7 +23,7 @@ body {
 // MIXINS
 @mixin number {
     font-family: $fontNumber;
-    font-size: 36px;
+    font-size: 24px;
 }
 
 @mixin wrapper {
@@ -92,15 +92,21 @@ body {
 
     .upgradeWrapper {
         @include wrapper;
-        background-color: rgb(199, 199, 199);
-        padding: 5px 7px;
+        padding: 8px 16px;
+        //background-color: rgb(201, 33, 33); // show padding 
 
         .incrementIncrementor {
             @include button;
+            display: inline-block;
+            padding: 4px;
+        }
 
-            #incrementIncrementorCostCounter {
-                vertical-align: baseline;
-            }
+        #incrementIncrementorCostCounter {
+            @include number;
+            margin: 0;
+            display: inline;
+            float: right;
+            //transform: translate(0, -4px); // janky as hell but it works so i dont care
         }
     }
 }

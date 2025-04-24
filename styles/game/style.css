@@ -43,15 +43,15 @@ body {
   width: 50%;
 }
 .scoringWrapper .scoreCounterWrapper #scoreCounter {
-  font-family: "Geo";
-  font-size: 36px;
+  font-family: "DM Serif Text";
+  font-size: 24px;
   font-size: 36px;
   margin: 0 25%;
   text-align: center;
 }
 .scoringWrapper .number {
-  font-family: "Geo";
-  font-size: 36px;
+  font-family: "DM Serif Text";
+  font-size: 24px;
 }
 
 .upgradeWrapperWrapper {
@@ -62,8 +62,7 @@ body {
 .upgradeWrapperWrapper .upgradeWrapper {
   margin: 10px auto;
   width: 50%;
-  background-color: rgb(199, 199, 199);
-  padding: 5px 7px;
+  padding: 8px 16px;
 }
 .upgradeWrapperWrapper .upgradeWrapper .incrementIncrementor {
   color: black;
@@ -72,11 +71,17 @@ body {
   font-size: 16px;
   transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
   border: 2px inset rgb(235, 235, 235);
+  display: inline-block;
+  padding: 4px;
 }
 .upgradeWrapperWrapper .upgradeWrapper .incrementIncrementor:hover {
   transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
   filter: brightness(115%) saturate(110%) hue-rotate(-15deg);
 }
-.upgradeWrapperWrapper .upgradeWrapper .incrementIncrementor #incrementIncrementorCostCounter {
-  vertical-align: baseline;
+.upgradeWrapperWrapper .upgradeWrapper #incrementIncrementorCostCounter {
+  font-family: "DM Serif Text";
+  font-size: 24px;
+  margin: 0;
+  display: inline;
+  float: right;
 }/*# sourceMappingURL=style.css.map */

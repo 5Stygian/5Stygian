@@ -11,6 +11,7 @@ let upgradeCostScaling = 1.15;
 
 // Set elements
 document.getElementById("scoreCounter").innerHTML = score;
+document.getElementById("incrementIncrementorCostCounter").innerHTML = incrementIncrementorCost;
 
 // INCREMENTOR
 function increment() {
@@ -25,7 +26,8 @@ function incrementIncrementor() {
     if (score >= upgradeIncrementorCost) {
         incrementIncrementorCost *= upgradeCostScaling;
         incrementAmount += 1;
-        document.getElementById("incrementIncrementor").innerHTML = incrementIncrementorCost
+        score -= incrementIncrementorCost;
+        document.getElementById("incrementIncrementorCostCounter").innerHTML = incrementIncrementorCost;
     }
 }
 document.getElementById("incrementIncrementor").addEventListener('click', incrementIncrementor);
