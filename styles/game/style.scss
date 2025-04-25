@@ -90,14 +90,14 @@ body {
 
         #autoScoreCounter {
             @include number;
-            font-size: 36px;
+            font-size: 20px;
             margin: 0 25%;
             text-align: center;
             display: inline;
 
             &::before {
                 font-family: $fontMain;
-                font-size: 36px;
+                font-size: 20px;
                 display: inline;
                 content: "Increments per second: ";
             }
