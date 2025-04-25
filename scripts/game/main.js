@@ -67,7 +67,7 @@ document.getElementById("consantIncrementor1").addEventListener('click', increme
 
 function autoIncrementScore() {
     score += autoIncrementAmount;
-    document.getElementById("autoIncrementCounter").innerHTML = "(Auto increments: " + autoIncrementAmount + ")";
+    document.getElementById("autoScoreCounter").innerHTML = autoIncrementAmount;
 }
 
 function mainloop() {
