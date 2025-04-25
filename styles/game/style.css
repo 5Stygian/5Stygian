@@ -23,7 +23,7 @@ body {
 .scoringWrapper .incrementorWrapper .incrementor {
 	color: black;
 	background-color: #c7c7c7;
-	font-family: "DM Serif Text";
+	font-family: "Rubik";
 	font-size: 16px;
 	transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
 	border: 2px inset #ebebeb;
@@ -58,7 +58,28 @@ body {
 }
 
 .scoringWrapper .scoreCounterWrapper #scoreCounter:before {
-	content: S;
+	content: "S ";
+}
+
+.scoringWrapper .autoScoreCounterWrapper {
+	margin: 0 auto;
+	width: 50%;
+}
+
+.scoringWrapper .autoScoreCounterWrapper #autoScoreCounter {
+	font-family: "DM Serif Text";
+	font-size: 24px;
+	font-size: 36px;
+	margin: 0 25%;
+	text-align: center;
+	display: inline;
+}
+
+.scoringWrapper .autoScoreCounterWrapper #autoScoreCounter::before {
+	font-family: "Rubik";
+	font-size: 36px;
+	display: inline;
+	content: "Increments per second: ";
 }
 
 .scoringWrapper .number {
@@ -82,7 +103,7 @@ body {
 .upgradeWrapperWrapper .upgradeWrapper .incrementIncrementor {
 	color: black;
 	background-color: #c7c7c7;
-	font-family: "DM Serif Text";
+	font-family: "Rubik";
 	font-size: 16px;
 	transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
 	border: 2px inset #ebebeb;
@@ -95,7 +116,7 @@ body {
 	filter: brightness(115%) saturate(110%) hue-rotate(-15deg);
 }
 
-.upgradeWrapperWrapper .upgradeWrapper #incrementIncrementorCostCounter {
+.upgradeWrapperWrapper .upgradeWrapper .costCounter {
 	font-family: "DM Serif Text";
 	font-size: 24px;
 	margin: 0;
