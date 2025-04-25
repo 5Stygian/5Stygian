@@ -6,6 +6,8 @@ This warning is not to be ignored.
 // Set variables
 let score = 0;
 let incrementAmount = 1;
+let autoIncrementAmount = 0;
+let autoIncrementCounter = 0;
 let upgradeCostScaling = 1.25;
 
 let incrementIncrementorCost = 25;
@@ -44,10 +46,11 @@ function incrementIncrementor() {
 }
 document.getElementById("incrementIncrementor").addEventListener('click', incrementIncrementor);
 
-// FACTORIES
+// FACTORIES (auto incrementors)
 function incrementConstantIncrementor1() {
     if (score >= constantIncrementor1Cost) {
         constantIncrementor1Amount += 1;
+        autoIncrementAmount += 1;
         score -= constantIncrementor1Cost;
         constantIncrementor1Cost *= upgradeCostScaling;
         score = Math.round(score);
@@ -62,5 +65,11 @@ function incrementConstantIncrementor1() {
 }
 document.getElementById("consantIncrementor1").addEventListener('click', incrementConstantIncrementor1);
 
+function autoIncrementScore() {
+    score += autoIncrementAmount;
+    document.getElementById("autoIncrementCounter").innerHTML = "(Auto increments: " + autoIncrementAmount + ")";
+}
+
 function mainloop() {
+    setInterval(autoIncrementScore, 1000);
 }
