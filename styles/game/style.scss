@@ -77,10 +77,6 @@ body {
             font-size: 36px;
             margin: 0 25%;
             text-align: center;
-
-            &:before {
-                content: "S ";
-            }
         }
     }
     
@@ -91,16 +87,9 @@ body {
         #autoScoreCounter {
             @include number;
             font-size: 20px;
-            margin: 0 25%;
+            margin: 0 auto;
             text-align: center;
             display: inline;
-
-            &::before {
-                font-family: $fontMain;
-                font-size: 20px;
-                display: inline;
-                content: "Increments per second: ";
-            }
         }
     }
 

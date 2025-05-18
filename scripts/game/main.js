@@ -20,7 +20,7 @@ document.getElementById("scoreCounter").innerHTML = score;
 document.getElementById("incrementIncrementorCostCounter").innerHTML = incrementIncrementorCost;
 document.getElementById("constantIncrementor1CostCounter").innerHTML = constantIncrementor1Cost;
 
-// INCREMENTOR
+// INCREMENTOR 
 function increment() {
     score += incrementAmount;
     document.getElementById("scoreCounter").innerHTML = score;
