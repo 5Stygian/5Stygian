@@ -1,0 +1,93 @@
+// imports
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&family=Reddit+Sans+Condensed:wght@200..900&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+//fonts
+$fontNormal: 'Reddit Sans';
+$fontMono: 'Reddit Mono';
+$fontConden: 'Reddit Sans Condensed';
+$fontClassic: 'Times New Roman', Times, serif;
+
+// colors
+$superYellow: oklch(0.9588 0.2267 111.18);
+$superYellowDark: oklch(0.8709 0.2146 111.18);
+
+// animations
+$animationTransition1: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
+
+// filters
+$filterMain: brightness(115%) saturate(110%) hue-rotate(-15deg);
+
+body {
+    color: oklch(100% 0.00011 271.152);
+    background-color: oklch(22.645% 0.00003 271.152);
+    font-family: $fontNormal;
+    padding: 0px;
+    margin: 0px;
+    transition: $animationTransition1;
+}
+
+table {
+    font-size: 16px;
+    
+    th {
+        font-weight: bold;
+    }
+
+    td {
+    }
+}
+
+a {
+    &:link {
+        color: $superYellow;
+        text-decoration: none;
+    }
+    
+    &:visited {
+        color: $superYellow;
+        filter: hue-rotate(-20deg) brightness(95%);
+        text-decoration: none;
+    }
+
+    &:hover {
+        color: $superYellowDark;
+        filter: brightness(105%) saturate(110%);
+        text-shadow: 0px 0px 3px oklch(0.9588 0.2267 111.18 / 0.41);
+        text-decoration: underline;
+    }
+
+    &:active {
+        color: oklch(67.199% 0.12286 234.811);
+        filter: saturate(120%) brightness(110%);
+        text-decoration: underline;
+    }
+}
+
+@mixin mainHeader {
+    text-shadow: 0px 0px 4px $superYellow;
+}
+
+#container {
+    margin: auto;
+    width: 67.41%;
+    box-shadow: -8px 0px 24px 7px oklch(20.904% 0.00002 271.152 / 0.2), 8px 0px 24px 7px oklch(20.904% 0.00002 271.152 / 0.2);
+
+    .containerInner {
+        padding: 8px 16px;
+        background-color: oklch(20.904% 0.00002 271.152);
+
+        .headerDominant {
+            @include mainHeader;
+            font-size: 3vw;
+        }
+        .headerSubmissive {
+            @include mainHeader;
+            font-size: 1.6vw;
+        }
+    }
+}
+
+.pageWalk {
+    margin: 32px 0px 20px 0px;
+    text-align: center;
+}

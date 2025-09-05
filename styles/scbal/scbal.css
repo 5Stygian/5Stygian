@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&family=Reddit+Sans+Condensed:wght@200..900&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap");
+body {
+  color: oklch(100% 0.00011 271.152deg);
+  background-color: oklch(22.645% 0.00003 271.152deg);
+  font-family: "Reddit Sans";
+  padding: 0px;
+  margin: 0px;
+  transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
+}
+
+table {
+  font-size: 16px;
+}
+table th {
+  font-weight: bold;
+}
+a:link {
+  color: oklch(95.88% 0.2267 111.18deg);
+  text-decoration: none;
+}
+a:visited {
+  color: oklch(95.88% 0.2267 111.18deg);
+  filter: hue-rotate(-20deg) brightness(95%);
+  text-decoration: none;
+}
+a:hover {
+  color: oklch(87.09% 0.2146 111.18deg);
+  filter: brightness(105%) saturate(110%);
+  text-shadow: 0px 0px 3px oklch(95.88% 0.2267 111.18deg / 0.41);
+  text-decoration: underline;
+}
+a:active {
+  color: oklch(67.199% 0.12286 234.811deg);
+  filter: saturate(120%) brightness(110%);
+  text-decoration: underline;
+}
+
+#container {
+  margin: auto;
+  width: 67.41%;
+  box-shadow: -8px 0px 24px 7px oklch(20.904% 0.00002 271.152deg / 0.2), 8px 0px 24px 7px oklch(20.904% 0.00002 271.152deg / 0.2);
+}
+#container .containerInner {
+  padding: 8px 16px;
+  background-color: oklch(20.904% 0.00002 271.152deg);
+}
+#container .containerInner .headerDominant {
+  text-shadow: 0px 0px 4px oklch(95.88% 0.2267 111.18deg);
+  font-size: 3vw;
+}
+#container .containerInner .headerSubmissive {
+  text-shadow: 0px 0px 4px oklch(95.88% 0.2267 111.18deg);
+  font-size: 1.6vw;
+}
+
+.pageWalk {
+  margin: 32px 0px 20px 0px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=scbal.css.map */
