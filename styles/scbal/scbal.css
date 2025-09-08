@@ -1,19 +1,49 @@
 @import url("https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&family=Reddit+Sans+Condensed:wght@200..900&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap");
 body {
-  color: oklch(100% 0.00011 271.152deg);
-  background-color: oklch(22.645% 0.00003 271.152deg);
+  color: oklch(99% 0 271.152deg);
+  background-color: oklch(22.67% 0.00003 0deg);
   font-family: "Reddit Sans";
+  font-size: 16px;
   padding: 0px;
   margin: 0px;
   transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
 }
 
 table {
-  font-size: 16px;
+  border: 1.5px solid oklch(95.88% 0.2267 111.18deg);
+  transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
 }
 table th {
+  background-color: rgb(24, 24, 24);
+  box-shadow: -8px 0px 8px rgba(24, 24, 24, 0.2), 8px 0px 24px rgba(24, 24, 24, 0.2), 0px 8px 8px rgba(24, 24, 24, 0.2), 0px -8px 24px rgba(24, 24, 24, 0.2);
+  margin: 2px;
+  padding: 2px 6px;
   font-weight: bold;
+  text-align: center;
+  border: 1px solid rgb(250, 250, 250);
+  transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
 }
+table td {
+  background-color: rgb(24, 24, 24);
+  box-shadow: -8px 0px 8px rgba(24, 24, 24, 0.2), 8px 0px 24px rgba(24, 24, 24, 0.2), 0px 8px 8px rgba(24, 24, 24, 0.2), 0px -8px 24px rgba(24, 24, 24, 0.2);
+  margin: 2px;
+  padding: 2px 6px;
+  text-align: center;
+  min-width: 50px !important;
+  border: 1px solid rgb(250, 250, 250);
+  transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
+}
+table .noShow:hover {
+  transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
+  filter: brightness(115%) saturate(110%) hue-rotate(-15deg);
+}
+table th:hover:not(.noShow),
+table td:hover:not(.noShow) {
+  transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
+  border: 1px solid rgb(80, 80, 80);
+  cursor: default;
+}
+
 a:link {
   color: oklch(95.88% 0.2267 111.18deg);
   text-decoration: none;
@@ -25,7 +55,7 @@ a:visited {
 }
 a:hover {
   color: oklch(87.09% 0.2146 111.18deg);
-  filter: brightness(105%) saturate(110%);
+  filter: hue-rotate(10deg) brightness(105%) saturate(110%);
   text-shadow: 0px 0px 3px oklch(95.88% 0.2267 111.18deg / 0.41);
   text-decoration: underline;
 }
@@ -53,9 +83,17 @@ a:active {
   font-size: 1.6vw;
 }
 
+.noShow {
+  filter: opacity(0%);
+  transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
+}
+
+.noMake {
+  display: none;
+  transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
+}
+
 .pageWalk {
   margin: 32px 0px 20px 0px;
   text-align: center;
 }
-
-/*# sourceMappingURL=scbal.css.map */
