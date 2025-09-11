@@ -7,6 +7,7 @@ const setBgImage = async () => {
   for (let i=0; i < selectedTags.length; i++) {
     selectedTags[i].style.backgroundImage = selectedTags[i].getAttribute("data-bgImg");
   }
+  console.log("${selectedTags.getAttribute("data-bgImg")}");
 }
 
 // execs all functions at once
