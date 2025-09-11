@@ -9,4 +9,9 @@ const setBgImage = async () => {
   }
 }
 
-setBgImage()
+// execs all functions at once
+const setAttrs = async () => {
+  await setBgImage();
+}
+
+document.addEventListener("onload", setAttrs);
