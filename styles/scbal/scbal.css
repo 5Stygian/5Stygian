@@ -10,7 +10,7 @@ body {
 }
 
 table {
-  border: 1.5px solid oklch(95.88% 0.2267 111.18deg);
+  border: 1.5px solid oklch(99.88% 0.2267 111.18deg);
   transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
 }
 table th {
@@ -81,6 +81,9 @@ a:active {
 #container .containerInner .headerSubmissive {
   text-shadow: 0px 0px 4px oklch(95.88% 0.2267 111.18deg);
   font-size: 1.6vw;
+}
+#container .containerInner .exampleSentance {
+  margin: 8px 32px;
 }
 
 .noShow {
