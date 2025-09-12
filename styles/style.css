@@ -77,8 +77,7 @@ a:visited {
 a:hover {
   color: rgb(54, 161, 214);
   font-style: "Reddit Mono";
-  -webkit-text-decoration: wavy;
-          text-decoration: wavy;
+  text-decoration: wavy;
 }
 
 a:active {
@@ -279,4 +278,6 @@ a:active {
     margin: 2px !important;
     padding: 25px 10px !important;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

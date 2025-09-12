@@ -5,14 +5,14 @@ const setBgImage = async () => {
   const selectedTags = document.querySelectorAll("#taa_img");
   console.log(selectedTags);
   for (let i=0; i < selectedTags.length; i++) {
-    selectedTags[i].style.backgroundImage = selectedTags[i].getAttribute("data-bgImg");
+    let bgImg = selectedTags[i].getAttribute("data-bgimg");
+    selectedTags[i].style.backgroundImage = `url(${bgImg})`;
   }
-  console.log("${selectedTags.getAttribute("data-bgImg")}");
 }
 
-// execs all functions at once
+// execs all functions one at a time
 const setAttrs = async () => {
   await setBgImage();
 }
 
-document.addEventListener("onload", setAttrs);
+setAttrs();
