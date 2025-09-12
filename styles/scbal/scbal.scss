@@ -28,7 +28,7 @@ body {
 }
 
 table {
-    border: 1.5px solid $superYellow;
+    border: 1.5px solid oklch(0.9988 0.2267 111.18);
     transition: $animationTransition1;
 
     th {
