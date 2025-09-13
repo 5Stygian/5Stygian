@@ -54,7 +54,7 @@ a:visited {
   text-decoration: none;
 }
 a:hover {
-  color: oklch(87.09% 0.2146 111.18deg);
+  color: oklch(75.2% 0.2146 111.18deg);
   filter: hue-rotate(10deg) brightness(105%) saturate(110%);
   text-shadow: 0px 0px 3px oklch(95.88% 0.2267 111.18deg / 0.41);
   text-decoration: underline;
@@ -73,6 +73,17 @@ a:active {
 #container .containerInner {
   padding: 8px 16px;
   background-color: oklch(20.904% 0.00002 271.152deg);
+  border-left: 2px solid oklch(95.88% 0.2267 111.18deg);
+  border-right: 2px solid oklch(95.88% 0.2267 111.18deg);
+}
+#container .containerInner hr {
+  color: oklch(95.88% 0.2267 111.18deg);
+  background-color: oklch(95.88% 0.2267 111.18deg);
+  height: 2px;
+}
+#container .containerInner hl {
+  color: oklch(77.94% 0.1875 67.583deg);
+  display: inline;
 }
 #container .containerInner .headerDominant {
   text-shadow: 0px 0px 4px oklch(95.88% 0.2267 111.18deg);
@@ -83,7 +94,10 @@ a:active {
   font-size: 1.6vw;
 }
 #container .containerInner .exampleSentance {
-  margin: 8px 32px;
+  font-family: "Reddit Mono";
+  margin: 12px 32px;
+  white-space: pre;
+  border-left: 5px solid oklch(69.41% 0.1801 245.52deg);
 }
 
 .noShow {
@@ -100,3 +114,18 @@ a:active {
   margin: 32px 0px 20px 0px;
   text-align: center;
 }
+
+@media only screen and (max-width: 845px) {
+  #container {
+    width: 100%;
+  }
+  td {
+    min-width: 100px;
+  }
+  .tableText {
+    margin: 2px !important;
+    padding: 25px 10px !important;
+  }
+}
+
+/*# sourceMappingURL=scbal.css.map */

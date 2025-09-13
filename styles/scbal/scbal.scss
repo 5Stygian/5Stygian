@@ -9,13 +9,18 @@ $fontClassic: 'Times New Roman', Times, serif;
 
 // colors
 $superYellow: oklch(0.9588 0.2267 111.18);
-$superYellowDark: oklch(0.8709 0.2146 111.18);
+$superYellowDark: oklch(0.752 0.2146 111.18);
+$superBlue: oklch(0.6941 0.1801 245.52);
+$superOrange: oklch(0.7794 0.1875 67.583);
 
 // animations
 $animationTransition1: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
 
 // filters
 $filterMain: brightness(115%) saturate(110%) hue-rotate(-15deg);
+
+// misc
+$containerInnerBorderThickness: 2px;
 
 body {
     color: oklch(0.99 0 271.152);
@@ -101,7 +106,18 @@ a {
     .containerInner {
         padding: 8px 16px;
         background-color: oklch(20.904% 0.00002 271.152);
+        border-left: $containerInnerBorderThickness solid $superYellow;
+        border-right: $containerInnerBorderThickness solid $superYellow;
 
+        hr {
+            color: $superYellow;
+            background-color: $superYellow;
+            height: 2px;
+        }
+        hl {
+            color: $superOrange;
+            display: inline;
+        }
         .headerDominant {
             @include mainHeader;
             font-size: 3vw;
@@ -111,7 +127,10 @@ a {
             font-size: 1.6vw;
         }
         .exampleSentance {
-            margin: 8px 32px;
+            font-family: $fontMono;
+            margin: 12px 32px;
+            white-space: pre;
+            border-left: 5px solid $superBlue;
         }
     }
 }
@@ -129,4 +148,17 @@ a {
 .pageWalk {
     margin: 32px 0px 20px 0px;
     text-align: center;
+}
+
+@media only screen and (max-width: 845px) {
+    #container {
+        width: 100%;
+    }
+    td {
+        min-width: 100px;
+    }
+    .tableText {
+        margin: 2px !important;
+        padding: 25px 10px !important;
+    }
 }
