@@ -34,6 +34,15 @@ const setBgImage = async () => {
   }
 }
 
+export const genSetAttrStyles = async (tag) => {
+  const selectedTags = document.querySelectorAll(tag);
+  console.log(selectedTags);
+  for (let j = 0; j < selectedTags.length; j++) {
+    let css = selectedTags[j].getAttribute(tag);
+    selectedTags[j].style.backgroundImage = css;
+  }
+}
+
 // calls all functions. idk why that needs a whole function but it js makes sense to me
 const start = async () => {
   console.log(`${tags}, ${attr}, ${property}`);
