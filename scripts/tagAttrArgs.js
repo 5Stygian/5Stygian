@@ -34,7 +34,7 @@ const setBgImage = async () => {
   }
 }
 
-export const genSetAttrStyles = async (tag) => {
+export default genSetAttrStyles = async (tag) => {
   const selectedTags = document.querySelectorAll(tag);
   console.log(selectedTags);
   for (let j = 0; j < selectedTags.length; j++) {
