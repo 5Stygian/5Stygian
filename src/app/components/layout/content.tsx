@@ -1,15 +1,20 @@
 import React from 'react';
 
+import DomHeader from './domHeader';
+import SubHeader from './subHeader';
+
 interface ContentProps {
   children: React.ReactNode;
-  headerDom: string;
-  headerSub?: string;
+  domHeader: string;
+  subHeader?: string;
 }
 
-export default function Content({ children, headerDom, headerSub? }: ContentProps) {
+export default function Content({ children, domHeader, subHeader? }: ContentProps) {
   return (
     <div className="w-2/3 h-full bg-slate-800 shadow-md shadow-slate-800">
-      {chldren}
+      <DomHeader>{domHeader}</DomHeader>
+      <SubHeader>{subHeader}</SubHeader>
+      {children}
     </div>
   );
 }
