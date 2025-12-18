@@ -6,6 +6,6 @@ interface DomHeaderProps {
 
 export default function DomHeader({ text }: DomHeaderProps) {
   return (
-    <h1>{text}</h1>
+    <h1 className="text-6xl font-bold">{text}</h1>
   );
 }
