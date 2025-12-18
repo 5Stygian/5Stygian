@@ -1,4 +1,4 @@
-import * as c from './compnents/index';
+import * as c from './components/index';
 
 export default function Home() {
   return (
