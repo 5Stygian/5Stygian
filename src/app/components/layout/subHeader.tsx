@@ -1,5 +1,5 @@
 interface SubHeaderProps {
-  text: string;
+  text: string | undefined;
 }
 
 export default function SubHeader({ text }: SubHeaderProps) {
