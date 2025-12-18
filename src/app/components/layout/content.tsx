@@ -1,7 +1,7 @@
 import React from 'react';
 
-import DomHeader from './domHeader';
-import SubHeader from './subHeader';
+import DomHeader from './headers/domHeader';
+import SubHeader from './headers/subHeader';
 
 interface ContentProps {
   children: React.ReactNode;
