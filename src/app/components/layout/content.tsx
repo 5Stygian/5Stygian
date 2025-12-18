@@ -6,7 +6,7 @@ import SubHeader from './subHeader';
 interface ContentProps {
   children: React.ReactNode;
   domHeader: string;
-  subHeader?: string;
+  subHeader?: string | undefined;
 }
 
 export default function Content({ children, domHeader, subHeader }: ContentProps) {
