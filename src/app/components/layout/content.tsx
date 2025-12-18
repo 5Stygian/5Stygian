@@ -11,7 +11,7 @@ interface ContentProps {
 
 export default function Content({ children, domHeader, subHeader }: ContentProps) {
   return (
-    <div className="w-3/5 h-full bg-slate-800 mx-auto shadow-md shadow-slate-800">
+    <div className="w-3/5 h-full bg-slate-800 mx-auto py-8 px-16 shadow-md shadow-slate-800">
       <DomHeader text={domHeader} />
       <SubHeader text={subHeader} />
       {children}
