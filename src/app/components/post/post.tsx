@@ -21,12 +21,12 @@ export default function Post({ children, title, tags }: PostProps) {
   return (
     <div className="w-3/4 h-fit my-8 mx-auto py-6 px-4 bg-gray-800 border-2 border-gray-700">
       <span className="block text-3xl font-bold ">{postTitle}</span>
-      <hr className="w-full h-2 bg-gray-700 border-none" />
-      <div className="my-4">
+      <hr className="w-full h-1 mt-1 bg-gray-700 border-none" />
+      <div className="my-2">
         <span className="text-xl font-bold">Tags</span>
         <div className="mt-3">{displayPostTags}</div>
       </div>
-      <hr className="w-full h-2 bg-gray-700 border-none" />
+      <hr className="w-full h-1 mb-1 bg-gray-700 border-none" />
       <span className="block text-3xl font-bold">Summary</span>
       {children}
     </div>
