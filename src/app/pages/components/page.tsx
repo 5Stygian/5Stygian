@@ -9,6 +9,9 @@ export default function Components() {
       <c.Notice type='warning'>
         hello
       </c.Notice>
+      <c.Post title="Post" tags={["tag 1", "tag 2"]}>
+        This is the summary segment
+      </c.Post>
     </c.Content>
   );
 }
