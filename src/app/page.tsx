@@ -1,16 +1,11 @@
 import * as c from "./components/index";
 
-export default function Home() {
+import Link from "next/link";
+
+export default function Index() {
   return (
-    <main className="w-screen h-full bg-zinc-950">
-      <c.Content domHeader="Index" subHeader="o algo">
-        <c.Notice type="info">
-          hi
-        </c.Notice>
-        <c.Notice type="warning">
-          hi
-        </c.Notice>
-      </c.Content>
-    </main>
+    <c.Content domHeader="Index" subHeader="o algo">
+      <Link href="/pages/components">Components</Link>
+    </c.Content>
   );
 }
