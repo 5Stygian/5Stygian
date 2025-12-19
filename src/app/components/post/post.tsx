@@ -23,7 +23,7 @@ export default function Post({ children, title, tags }: PostProps) {
       <span className="block text-3xl font-bold ">{postTitle}</span>
       <div className="my-4">
         <span className="text-xl font-bold">Tags</span>
-        <hr className="w-7/8 my-2" />
+        <hr className="w-7/8 my-3 mx-auto" />
         <div>{displayPostTags}</div>
       </div>
       <span className="block text-3xl font-bold">Summary</span>
