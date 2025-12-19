@@ -12,10 +12,10 @@ export default function Post({ children, title, tags }: PostProps) {
   const [postTitle, setPostTitle] = useState<string>(title);
   const [postTags, setPostTags] = useState<string[]>(tags);
 
-  let displayPostTags: string;
+  let displayPostTags: string = "";
 
-  if (Array.isArray(tags)) {
-    displayPostTags = tags.join(", ");
+  if (Array.isArray(postTags)) {
+    displayPostTags = postTags.join(", ");
   }
   
   return (
