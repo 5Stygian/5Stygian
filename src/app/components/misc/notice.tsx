@@ -17,7 +17,7 @@ export default function Notice({ children, type }: NoticeProps) {
   }
 
   let iconChar, typeText;
-  let noticeStyle = "grid w-5/6 my-8 mx-4 bg-gray-800 border-2 rounded-md";
+  let noticeStyle = "w-5/6 my-8 mx-auto bg-gray-800 border-2 rounded-md";
   let iconStyle = "w-7 mr-2 text-center float-left rounded-full border-2 font-mono font-bold";
 
   switch (type) {
