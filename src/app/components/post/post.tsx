@@ -14,8 +14,8 @@ export default function Post({ children, title, tags }: PostProps) {
 
   let displayPostTags: string;
 
-  if (Array.isArray(postTags)) {
-   displayPostTags = postTags.join(", ");
+  if (Array.isArray(tags)) {
+    displayPostTags = tags.join(", ");
   }
   
   return (
