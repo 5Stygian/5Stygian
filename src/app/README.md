@@ -1,13 +1,13 @@
 # Structure
 
-## ``components/``
+### ``components/``
 
 Where custom components are stored.
 
-## ``styles/``
+### ``styles/``
 
 Where CSS files are stored.
 
-## ``papers/``
+### ``papers/``
 
 Where pages are stored.
