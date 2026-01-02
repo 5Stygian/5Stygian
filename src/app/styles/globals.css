@@ -34,9 +34,22 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 3.75rem;
+}
+h2 {
+  font-size: 2.85rem;
+}
+
 table {
   background-color: rgb(20,20,20);
   box-shadow: var(--g-table-box-shadow);
+  border-collapse: separate;
+  border-spacing: 3px;
 }
 
 table th {
