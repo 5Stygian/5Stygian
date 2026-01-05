@@ -108,3 +108,7 @@ a:visited {
 a:active {
   filter: brightness(1000000%);
 }
+
+p {
+  margin-bottom: 36px;
+}
