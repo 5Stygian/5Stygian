@@ -8,6 +8,7 @@ export default function ConlangsHub() {
 			<table>
 				<tbody>
 					<tr><th><Link href="./newconlang">newconlang</Link></th></tr>
+					<tr><th><Link href="./nake">Nake</Link></th></tr>
 				</tbody>
 			</table>
 		</c.Content>
