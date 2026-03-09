@@ -55,32 +55,33 @@ export default function NakeReference() {
         </table>
         <br />
       <h2 id="phonology-vowels">Vowels</h2>
-      <table>
-        <tbody>
-          <tr>
-            <th> </th>
-            <th>Front</th>
-            <th>Back</th>
-          </tr>
-          <tr>
-            <th>Close</th>
-            <td>i</td>
-          </tr>
-          <tr>
-            <th>Close-Mid</th>
-            <td>e</td>
-          </tr>
-          <tr>
-            <th>Open-Mid</th>
-            <td>ɛ</td>
-          </tr>
-          <tr>
-            <th>Open</th>
-            <td className='opacity-0'></td>
-            <td>ɑ</td>
-          </tr>
-        </tbody>
-      </table>
+        <table>
+          <tbody>
+            <tr>
+              <th> </th>
+              <th>Front</th>
+              <th>Back</th>
+            </tr>
+            <tr>
+              <th>Close</th>
+              <td>i</td>
+            </tr>
+            <tr>
+              <th>Close-Mid</th>
+              <td>e</td>
+            </tr>
+            <tr>
+              <th>Open-Mid</th>
+              <td>ɛ</td>
+            </tr>
+            <tr>
+              <th>Open</th>
+              <td className='opacity-0'></td>
+              <td>ɑ</td>
+            </tr>
+          </tbody>
+        </table>
+        <br />
     </c.Content>
   );
 }
