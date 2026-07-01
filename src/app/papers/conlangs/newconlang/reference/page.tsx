@@ -1,11 +1,12 @@
-import * as c from '@/app/components/index';
+import * as c from "@/app/components/index";
 
 export default function NewconlangReference() {
   return (
     <c.Content domHeader="newconlang" subHeader="Reference">
       <h1 id="misc">Misc</h1>
       <p>
-        <strong>Word Order: </strong>S-V-O<br />
+        <strong>Word Order: </strong>S-V-O
+        <br />
       </p>
       <h1 id="phonology">Phonology</h1>
       <h2 id="phonology-consonants">Consonants</h2>
@@ -29,9 +30,9 @@ export default function NewconlangReference() {
           </tr>
           <tr>
             <th>Plosive</th>
-            <td className="whitespace-pre">p    b</td>
+            <td className="whitespace-pre">p b</td>
             <td className="opacity-0"></td>
-            <td className="whitespace-pre">t    d</td>
+            <td className="whitespace-pre">t d</td>
             <td className="opacity-0"></td>
             <td className="opacity-0"></td>
           </tr>

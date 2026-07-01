@@ -8,6 +8,10 @@ Where custom components are stored.
 
 Where CSS files are stored.
 
+### ``scripts/``
+
+Where scripts are stored.
+
 ### ``papers/``
 
 Where pages are stored.

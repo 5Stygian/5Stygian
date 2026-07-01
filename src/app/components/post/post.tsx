@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 interface PostProps {
   children: React.ReactNode;
@@ -17,7 +17,7 @@ export default function Post({ children, title, tags }: PostProps) {
   if (Array.isArray(postTags)) {
     displayPostTags = postTags.join(", ");
   }
-  
+
   return (
     <div className="w-3/4 h-fit my-8 mx-auto pt-4 pb-6 px-4 bg-gray-800 border-2 border-gray-700">
       <span className="block text-3xl font-bold ">{postTitle}</span>
@@ -26,7 +26,7 @@ export default function Post({ children, title, tags }: PostProps) {
         <span className="text-xl font-bold">Tags</span>
         <div className="mt-2">{displayPostTags}</div>
       </div>
-      <hr className="w-full h-1 mb-1 bg-gray-700 border-none" />
+      <hr className="w-full h-1 mb-2 bg-gray-700 border-none" />
       <span className="block text-3xl font-bold">Summary</span>
       {children}
     </div>
