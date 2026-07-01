@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Hub() {
   return (
-    <c.Content domHeader="Fursona Lore LoL" subHeader="Hub">
+    <c.Content domHeader="Fursona Lore" subHeader="Hub">
       <Link href="/papers/fllol/the-arcoil">
         <h3>The Arcoil (Magic System)</h3>
       </Link>
