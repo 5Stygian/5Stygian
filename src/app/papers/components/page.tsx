@@ -3,7 +3,7 @@ import * as c from "@/app/components/index";
 export default function Components() {
   return (
     <>
-      <c.TableOfContents ids={["page-summary", "showcase"]} />
+      <c.TableOfContents />
       <c.Content domHeader="Components">
         <h2 id="page-summary">What is this?</h2>
         <p>

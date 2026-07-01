@@ -8,7 +8,7 @@ interface SubHeaderProps {
 
 export default function SubHeader({ text }: SubHeaderProps) {
   return (
-    <h2 id="sub-header" className="font-bold!">
+    <h2 id="" className="font-bold!">
       {text}
     </h2>
   );
