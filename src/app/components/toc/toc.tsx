@@ -9,7 +9,7 @@ export default function TableOfContents() {
 
   useEffect(() => {
     const headerIds: Array<string> = [];
-    
+
     for (let i = 1; i <= 6; i++) {
       const headers = document.getElementsByTagName(`h${i}`);
 
@@ -17,19 +17,17 @@ export default function TableOfContents() {
         if (header.id !== "") headerIds.push(header.id);
       }
     }
-    
+
     setIds(headerIds);
   }, []);
-  
+
   return (
-    <div className="fixed top-0 right-0 mt-4 mr-4 p-2.5 bg-zinc-900 border-2 border-zinc-700">
+    <div className="fixed top-0 right-0 mt-4 mr-4 p-2.5 bg-zinc-900 border-2 border-zinc-700 z-100">
       <strong>Table of Contents</strong>
       <hr className="my-2" />
       {ids.map((id, index) => {
         const idNameArray: Array<string> = id.split("-");
-        let displayName: string = idNameArray
-          .map(capitalize)
-          .join(" ");
+        let displayName: string = idNameArray.map(capitalize).join(" ");
 
         return (
           <div key={index}>

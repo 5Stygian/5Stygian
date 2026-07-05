@@ -1,8 +1,11 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 
 import DomHeader from "./headers/domHeader";
 import SubHeader from "./headers/subHeader";
+import TopBar from "./topbar";
 
 interface ContentProps {
   children: React.ReactNode;
@@ -17,10 +20,11 @@ export default function Content({
 }: ContentProps) {
   return (
     <>
-      <div className="w-3/5 h-full bg-zinc-900 mx-auto py-8 px-12 shadow-lg shadow-zinc-900">
+      <TopBar />
+      <div className="w-3/5 h-full mx-auto py-24 px-12 bg-zinc-900 shadow-lg shadow-zinc-900">
         <DomHeader text={domHeader} />
         <SubHeader text={subHeader} />
-        <hr className="w-4/5 mx-auto my-8" />
+        <hr className="w-13/16 mx-auto my-8 border border-zinc-500/35" />
         {children}
       </div>
       <hr className="h-6 border-none" />

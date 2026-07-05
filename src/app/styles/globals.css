@@ -101,7 +101,7 @@ table td:hover:not(.noShow) {
 
 a {
   text-decoration: none;
-  color: rgb(86, 123, 255) !important;
+  color: oklch(62.645% 0.20026 268.32) !important;
 }
 
 a:hover {
