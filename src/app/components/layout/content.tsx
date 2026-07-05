@@ -21,7 +21,7 @@ export default function Content({
   return (
     <>
       <TopBar />
-      <div className="w-3/5 h-full mx-auto py-24 px-12 bg-zinc-900 shadow-lg shadow-zinc-900">
+      <div className="sm:w-3/5 h-full mx-auto py-38 sm:py-24 px-12 bg-zinc-900 shadow-lg shadow-zinc-900">
         <DomHeader text={domHeader} />
         <SubHeader text={subHeader} />
         <hr className="w-13/16 mx-auto my-8 border border-zinc-500/35" />
