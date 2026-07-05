@@ -5,7 +5,7 @@ import { WBP1Name } from "./globals";
 
 export default function Index() {
   return (
-    <c.Content domHeader="Index" subHeader="o algo">
+    <c.Content domHeader="Index" subHeader="hi )))">
       <Link href="/papers/components">Components</Link>
       <br />
       <Link href="/papers/wbp1/hub">{WBP1Name}</Link>

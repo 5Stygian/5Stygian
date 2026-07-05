@@ -1,1 +1,1 @@
-This page is a $$\color{red}{\textbf{Ruby}}$$
+I don't know how to write a serious bio.
