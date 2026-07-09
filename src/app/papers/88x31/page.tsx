@@ -74,7 +74,7 @@ export default function LinkPage() {
         <StygianLink1Button />
       </div>
       <div id="codebox" className="mt-4 p-2 bg-black border-2 border-white rounded-lg">
-        Click on one to get the HTML.
+        Click on one to get the code.
       </div>
     </c.Content>
   );
