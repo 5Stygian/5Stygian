@@ -14,15 +14,15 @@ const StygianLink1HTML: string = `
     </div>
     <div className="grid grid-cols-3">
       <div className="z-4 text-white font-extrabold text-[14px] -translate-x-6.75 -translate-y-0.5">5Stygian</div>
-      <div className="z-3 text-white font-extrabold text-[14px] -translate-x-8 translate-y-1 opacity-75">5Stygian</div>
-      <div className="z-2 text-white font-extrabold text-[14px] -translate-x-8.5 translate-y-2.5 opacity-50">5Stygian</div>
+      <div className="z-3 text-white font-extrabold text-[14px] -translate-x-7.75 translate-y-1 opacity-75">5Stygian</div>
+      <div className="z-2 text-white font-extrabold text-[14px] -translate-x-8.75 translate-y-2.5 opacity-50">5Stygian</div>
     </div>
   </a>
 </div>`;
 
 export function StygianLink1Button() {
   return (
-    <div id="5StygianLink1" className="h-7.75 w-22 overflow-hidden hover:cursor-pointer">
+    <div id="5StygianLink1" className="h-7.75 w-22 overflow-hidden hover:cursor-pointer hover:scale-300">
       <div
         className="grid grid-cols-3 h-7.75 w-22\
                    hover:saturate-100! hover:brightness-100! hover:no-underline!"
@@ -37,10 +37,10 @@ export function StygianLink1Button() {
           <div className="z-4 text-white font-extrabold text-[14px] -translate-x-6.75 -translate-y-0.5">
             5Stygian
           </div>
-          <div className="z-3 text-white font-extrabold text-[14px] -translate-x-8 translate-y-1 opacity-75">
+          <div className="z-3 text-white font-extrabold text-[14px] -translate-x-7.75 translate-y-1 opacity-75">
             5Stygian
           </div>
-          <div className="z-2 text-white font-extrabold text-[14px] -translate-x-8.5 translate-y-2.5 opacity-50">
+          <div className="z-2 text-white font-extrabold text-[14px] -translate-x-8.75 translate-y-2.5 opacity-50">
             5Stygian
           </div>
         </div>
