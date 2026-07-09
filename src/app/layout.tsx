@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Rubik_80s_Fade, Rubik_Glitch_Pop } from "next/font/google";
 import "./styles/globals.css";
 
 const geistSans = Geist({
@@ -10,6 +10,16 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const rubik80sFade = Rubik_80s_Fade({
+  weight: "400",
+  variable: "--font-R80F"
+});
+
+const rubikGlitchPop = Rubik_Glitch_Pop({
+  weight: "400",
+  variable: "--font-RGP"
 });
 
 export const metadata: Metadata = {
@@ -25,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${rubik80sFade.variable} ${rubikGlitchPop.variable} antialiased`}
       >
         <main className="w-screen h-full bg-zinc-950">{children}</main>
       </body>

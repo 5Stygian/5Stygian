@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&family=Rubik+Glitch+Pop&display=swap');
+
 @import "tailwindcss";
 
 :root {
@@ -19,6 +21,8 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-R80F: var(--font-R80F);
+  --font-RGP: var(--font-RGP);
 }
 
 @media (prefers-color-scheme: dark) {
