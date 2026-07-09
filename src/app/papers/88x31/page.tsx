@@ -51,10 +51,10 @@ export function StygianLink1Button() {
 
 export default function LinkPage() {
   useEffect((): void => {
+    const codebox: HTMLDivElement = document.getElementById("codebox") as HTMLDivElement;
     const linkbox1: HTMLDivElement = document.getElementById("5StygianLink1") as HTMLDivElement;
 
     linkbox1.addEventListener("click", (): void => {
-      const codebox: HTMLDivElement = document.getElementById("codebox") as HTMLDivElement;
       let text: string = StygianLink1HTML.replace(new RegExp(/\n|(?<=>)\s+(?=<)/gm), "");
       text = text.replace(new RegExp(/(?<=>)\s+(?=<)/gm), "");
 
