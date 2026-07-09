@@ -13,15 +13,9 @@ const StygianLink1HTML: string = `
       <span className="h-15 w-110/100 bg-[#181818]" />
     </div>
     <div className="grid grid-cols-3">
-      <div className="z-4 text-white font-extrabold text-[14px] -translate-x-6.75 -translate-y-0.5">
-        5Stygian
-      </div>
-      <div className="z-3 text-white font-extrabold text-[14px] -translate-x-8 translate-y-1 opacity-75">
-        5Stygian
-      </div>
-      <div className="z-2 text-white font-extrabold text-[14px] -translate-x-8.5 translate-y-2.5 opacity-50">
-        5Stygian
-      </div>
+      <div className="z-4 text-white font-extrabold text-[14px] -translate-x-6.75 -translate-y-0.5">5Stygian</div>
+      <div className="z-3 text-white font-extrabold text-[14px] -translate-x-8 translate-y-1 opacity-75">5Stygian</div>
+      <div className="z-2 text-white font-extrabold text-[14px] -translate-x-8.5 translate-y-2.5 opacity-50">5Stygian</div>
     </div>
   </a>
 </div>`;
@@ -57,12 +51,14 @@ export function StygianLink1Button() {
 
 export default function LinkPage() {
   useEffect((): void => {
-    const linkbox: HTMLDivElement = document.getElementById("5StygianLink1") as HTMLDivElement;
+    const linkbox1: HTMLDivElement = document.getElementById("5StygianLink1") as HTMLDivElement;
 
-    linkbox.addEventListener("click", (): void => {
+    linkbox1.addEventListener("click", (): void => {
       const codebox: HTMLDivElement = document.getElementById("codebox") as HTMLDivElement;
+      let text: string = StygianLink1HTML.replace(new RegExp(/\n|(?<=>)\s+(?=<)/gm), "");
+      text = text.replace(new RegExp(/(?<=>)\s+(?=<)/gm), "");
 
-      codebox.innerText = StygianLink1HTML;
+      codebox.innerText = text;
     });
   }, []);
 
