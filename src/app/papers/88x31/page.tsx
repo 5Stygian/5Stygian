@@ -55,8 +55,9 @@ export default function LinkPage() {
     const linkbox1: HTMLDivElement = document.getElementById("5StygianLink1") as HTMLDivElement;
 
     linkbox1.addEventListener("click", (): void => {
-      let text: string = StygianLink1HTML.replace(new RegExp(/\n|(?<=>)\s+(?=<)/gm), "");
-      text = text.replace(new RegExp(/(?<=>)\s+(?=<)/gm), "");
+      const text: string = StygianLink1HTML
+        .replace(new RegExp(/\n/gm), "")
+        .replace(new RegExp(/(?<=>)\s+(?=<)/gm), "");
 
       codebox.innerText = text;
     });
