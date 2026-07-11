@@ -22,7 +22,7 @@ export default function TableOfContents() {
   }, []);
 
   return (
-    <div className="fixed top-0 right-0 mt-4 mr-4 p-2.5 bg-zinc-900 border-2 border-zinc-700 z-100">
+    <div className="fixed top-0 right-0 mt-4 mr-4 p-2.5 bg-zinc-900 border-2 border-zinc-700 z-9001">
       <strong>Table of Contents</strong>
       <hr className="my-2" />
       {ids.map((id, index) => {
