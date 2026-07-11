@@ -49,7 +49,7 @@ export default function TableOfContents() {
         <hr id="toc-divider" className="my-2" />
         {ids.map((id, index) => {
           const idNameArray: Array<string> = id.split("-");
-          let displayName: string = idNameArray
+          const displayName: string = idNameArray
             .map(capitalize)
             .join(" ");
 

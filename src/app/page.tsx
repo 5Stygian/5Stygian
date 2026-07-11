@@ -8,7 +8,7 @@ export default function Index() {
     <c.Content domHeader="Index" subHeader="hi )))">
       <Link href="/papers/components">Components</Link>
       <br />
-      <Link href="/papers/wbp1/hub">{WBP1Name}</Link>
+      <Link href="/papers/wbp1/hub" className="hidden">{WBP1Name}</Link>
       <br />
       <Link href="/papers/conlangs/hub" className="hidden">
         Conlangs Hub
