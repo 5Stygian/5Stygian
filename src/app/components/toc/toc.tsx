@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { capitalize, getElementById } from "@/app/scripts/utils";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 export default function TableOfContents() {
   const [ids, setIds] = useState<Array<string>>([]);
@@ -58,7 +58,7 @@ export default function TableOfContents() {
       </div>
       <div id="toc-contents">
         <hr id="toc-divider" className="my-2" />
-        {ids.map((id, index) => {
+        {ids.map((id, index): React.ReactNode => {
           const idNameArray: Array<string> = id.split("-");
           const displayName: string = idNameArray
             .map(capitalize)

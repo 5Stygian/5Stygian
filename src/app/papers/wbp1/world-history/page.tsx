@@ -18,19 +18,17 @@ export default function WorldHistory() {
           a grand civilization based on the principles of united progress and kindness towards all. They
           utilized the <Link href="/papers/wbp1/the-arcoil">Arcoil</Link> to create advanced infrastructure.
         </p>
-        <p>
+        <p className="mb-0!">
           However, disagreements between how the Humans and Anthrans wanted to govern the Arcoil began
           to emerge, as well as distrust towards the opposite species. Soon enough, war broke out 
           between the two schools of thought. The Anthrans eventually found themselves backed into a
           corner, so they came up with a last ditch plan to end the war. The plan had two major components:
-          <ol className="my-4">
-            <li className="my-2 pl-8">
-              <strong>1)</strong> Transport the Anthrans to an alternate dimension.
-            </li>
-            <li className="my-2 pl-8">
-              <strong>2)</strong> Erase all knowledge of the Arcoil, and anything relating to it.
-            </li>
-          </ol>
+        </p>
+        <c.List items={[
+          "Transport the Anthrans to an alternate dimension.",
+          "Erase all knowledge of the Arcoil, and anything relating to it."
+        ]} />
+        <p>
           The execution of this plan had been near perfection. But, some Humans had discovered this plan,
           and were able to protect themselves from its effects.
           Now, the war was over, and the Anthrans had survived. This event is called "The Expunging".
