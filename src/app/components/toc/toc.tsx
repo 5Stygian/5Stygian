@@ -39,7 +39,9 @@ export default function TableOfContents() {
   }, []);
     
   return (
-    <div className="fixed top-0 right-0 mt-4 mr-4 p-2.5 bg-zinc-900 border-2 border-zinc-700 z-9001">
+    <div className="
+      fixed top-0 right-0 mt-4 mr-4 p-2.5 bg-zinc-900 border-2 border-zinc-700 z-9001
+      translate-y-20 sm:translate-y-0">
       <div>
         <strong>Table of Contents</strong>
         <span
