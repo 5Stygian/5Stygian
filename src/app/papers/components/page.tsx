@@ -9,8 +9,8 @@ export default function Components() {
         <p>
           This page is for showing off all of the react components that i've
           made. "But how do I use them?" you may ask. Just look at the source
-          code. All components reside in this path: "ROOT/app/components". I'm
-          much too lazy to make documentation but I don't think that it's too
+          code. All components reside in this path: "{"<ROOT>"}/app/components". I'm
+          much too lazy to make documentation but I don't think that their usage is too
           hard to follow.
         </p>
         <h2 id="showcase">Showcase</h2>

@@ -79,7 +79,7 @@ export const StygianLink1: LinkBox = new LinkBox(
 
 export const StygianLink2 = new LinkBox(
 `<div id="5StygianLink2" className="h-7.75 w-22 bg-white overflow-hidden select-none">
-  <a href="https://5stygian.netlify.app/" target="_blank" className={LinkBox.LinkClass}>
+  <a href="https://5stygian.netlify.app/" target="_blank" className=${LinkBox.LinkClass}>
     <div className="grid grid-cols-2 -translate-x-1.5 -translate-y-4 rotate-30 scale-125">
       <span className="h-20 w-135/100 bg-linear-to-l from-[#442406] to-[#8d4909]" />
       <span className="h-20 w-135/100 bg-linear-to-l from-[#491010] to-[#521d1d]" />
