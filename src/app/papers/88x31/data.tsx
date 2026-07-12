@@ -1,5 +1,5 @@
 export class LinkBox {
-  private Component: React.ReactNode;
+  public Component: React.ReactNode;
 
   public Code: string;
   public Function: () => React.ReactNode;
@@ -23,15 +23,16 @@ export class LinkBox {
     LinkBox.LinkBoxes.push(this);
   }
 
-  /**
-   * GetRequiredFontsAsString
-   */
   public GetRequiredFontsAsString(): string {
     let result: string = "None";
 
     if (this.RequiredFonts.length !== 0) result = this.RequiredFonts.join(", ");
 
     return result;
+  }
+
+  public static GetRandomLink(): LinkBox {
+    return LinkBox.LinkBoxes[Math.ceil(Math.random())*2];
   }
 }
 

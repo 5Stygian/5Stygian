@@ -41,13 +41,14 @@ export default function TableOfContents() {
   return (
     <div className="
       fixed top-0 right-0 mt-4 mr-4 p-2.5 bg-zinc-900 border-2 border-zinc-700 z-9001
-      translate-y-20 sm:translate-y-0">
+      translate-y-20 sm:translate-y-0"
+    >
       <div>
         <strong>Table of Contents</strong>
         <span
           id="toc-collapse"
           className="
-            inline-block ml-2 px-2 font-extrabold text-orange-300
+            inline-block z-9002 ml-2 px-2 font-extrabold text-orange-300
             border-l-2 border-l-zinc-500/35 select-none
             hover:cursor-pointer"
         >
