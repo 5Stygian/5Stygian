@@ -10,7 +10,7 @@ export default function TableOfContents() {
   useEffect(() => {
     const headerIds: Array<string> = [];
     
-    const collapse: HTMLSpanElement = getElementById<HTMLSpanElement>("toc-collapse");
+    const collapse: HTMLButtonElement = getElementById<HTMLButtonElement>("toc-collapse");
     const collapseText: HTMLDivElement = getElementById<HTMLDivElement>("toc-collapseText");
     const contents: HTMLDivElement = getElementById<HTMLHRElement>("toc-contents");
     let contentsAreCollapsed: boolean = false
@@ -45,7 +45,8 @@ export default function TableOfContents() {
     >
       <div>
         <strong>Table of Contents</strong>
-        <span
+        <button
+          type="button"
           id="toc-collapse"
           className="
             inline-block z-9002 ml-2 px-2 font-extrabold text-orange-300
@@ -53,7 +54,7 @@ export default function TableOfContents() {
             hover:cursor-pointer"
         >
           <div id="toc-collapseText">V</div>
-        </span>
+        </button>
       </div>
       <div id="toc-contents">
         <hr id="toc-divider" className="my-2" />
