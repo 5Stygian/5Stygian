@@ -11,7 +11,7 @@ export default function TableOfContents() {
     const headerIds: Array<string> = [];
     
     const collapse: HTMLSpanElement = document.getElementById("toc-collapse") as HTMLSpanElement;
-    const divider: HTMLHRElement = document.getElementById("toc-divider") as HTMLHRElement;
+    const collapseText: HTMLDivElement = document.getElementById("toc-collapseText") as HTMLDivElement;
     const contents: HTMLDivElement = document.getElementById("toc-contents") as HTMLDivElement;
     let contentsAreCollapsed: boolean = false
 
@@ -27,10 +27,14 @@ export default function TableOfContents() {
 
     collapse.addEventListener("click", (): void => {
       contentsAreCollapsed = !contentsAreCollapsed;
-
-      contentsAreCollapsed ?
-        contents.className = "hidden" :
+      
+      if (contentsAreCollapsed) {
+        contents.className = "hidden";
+        collapseText.className = "rotate-180";
+      } else {
         contents.className = "";
+        collapseText.className = "";
+      }
     });
   }, []);
     
@@ -40,9 +44,12 @@ export default function TableOfContents() {
         <strong>Table of Contents</strong>
         <span
           id="toc-collapse"
-          className="ml-2 pl-2 font-extrabold border-l-2 border-l-zinc-500/35 select-none hover:cursor-pointer"
+          className="
+            inline-block ml-2 px-2 font-extrabold text-orange-300
+            border-l-2 border-l-zinc-500/35 select-none
+            hover:cursor-pointer"
         >
-          O
+          <div id="toc-collapseText">V</div>
         </span>
       </div>
       <div id="toc-contents">
