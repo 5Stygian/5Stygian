@@ -23,11 +23,11 @@ export function capitalize(text: string): string {
 }
 
 /**
- * 
+ * This function assumes that the element exists for simplicity.
  * @param T The type of the element that you are getting.
  * @param id The id of the element that you want to get.
  * @returns The element with the matching id, casted to T, or null if the element does not exist.
  */
-export function getElementById<T extends HTMLElement>(id: string): T | null {
+export function getElementById<T extends HTMLElement>(id: string): T {
   return document.getElementById(id) as T;
 }
