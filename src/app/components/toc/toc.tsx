@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { capitalize } from "@/app/scripts/utils";
+import { capitalize, getElementById } from "@/app/scripts/utils";
 import { useState, useEffect } from "react";
 
 export default function TableOfContents() {
@@ -10,9 +10,9 @@ export default function TableOfContents() {
   useEffect(() => {
     const headerIds: Array<string> = [];
     
-    const collapse: HTMLSpanElement = document.getElementById("toc-collapse") as HTMLSpanElement;
-    const collapseText: HTMLDivElement = document.getElementById("toc-collapseText") as HTMLDivElement;
-    const contents: HTMLDivElement = document.getElementById("toc-contents") as HTMLDivElement;
+    const collapse: HTMLSpanElement = getElementById<HTMLSpanElement>("toc-collapse");
+    const collapseText: HTMLDivElement = getElementById<HTMLDivElement>("toc-collapseText");
+    const contents: HTMLDivElement = getElementById<HTMLHRElement>("toc-contents");
     let contentsAreCollapsed: boolean = false
 
     for (let i = 1; i <= 6; i++) {

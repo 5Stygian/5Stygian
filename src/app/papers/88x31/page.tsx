@@ -3,14 +3,15 @@
 import * as c from "@/app/components/index";
 import { useEffect } from "react";
 import { StygianLink1, StygianLink2 } from "./data";
+import { getElementById } from "@/app/scripts/utils";
 
 export default function LinkPage() {
   useEffect((): void => {
-    const codebox: HTMLDivElement = document.getElementById("codebox") as HTMLDivElement;
-    const requiredFonts: HTMLSpanElement = document.getElementById("requiredFonts") as HTMLSpanElement;
+    const codebox: HTMLDivElement = getElementById<HTMLDivElement>("codebox");
+    const requiredFonts: HTMLSpanElement = getElementById<HTMLSpanElement>("requiredFonts");
 
-    const linkbox1: HTMLDivElement = document.getElementById("5StygianLink1") as HTMLDivElement;
-    const linkbox2: HTMLDivElement = document.getElementById("5StygianLink2") as HTMLDivElement;
+    const linkbox1: HTMLDivElement = getElementById<HTMLDivElement>("5StygianLink1");
+    const linkbox2: HTMLDivElement = getElementById<HTMLDivElement>("5StygianLink2");
 
     linkbox1.addEventListener("click", (): void => {
       codebox.innerText = StygianLink1.Code;

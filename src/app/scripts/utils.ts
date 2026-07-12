@@ -1,3 +1,5 @@
+"use client";
+
 /**
  * Capitalizes the word that is passed. Will throw an error if the first character isn't a letter.
  *
@@ -18,4 +20,14 @@ export function capitalize(text: string): string {
   }
 
   return result;
+}
+
+/**
+ * 
+ * @param T The type of the element that you are getting.
+ * @param id The id of the element that you want to get.
+ * @returns The element with the matching id, casted to T, or null if the element does not exist.
+ */
+export function getElementById<T extends HTMLElement>(id: string): T | null {
+  return document.getElementById(id) as T;
 }
