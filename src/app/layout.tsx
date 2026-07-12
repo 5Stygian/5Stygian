@@ -37,7 +37,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${rubik80sFade.variable} ${rubikGlitchPop.variable} antialiased`}
       >
-        <main className="w-screen h-full bg-zinc-950">{children}</main>
+        <main className="w-screen h-full text-[#ebebeb] bg-zinc-950">{children}</main>
       </body>
     </html>
   );

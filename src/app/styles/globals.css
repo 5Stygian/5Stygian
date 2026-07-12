@@ -57,6 +57,15 @@ h3 {
   font-size: 1.7rem;
 }
 
+hr {
+  width: calc(15 / 16 * 100%);
+  margin-inline: auto;
+  margin-block: calc(var(--spacing) * 3);
+  border-style: var(--tw-border-style);
+  border-width: 1px;
+  border-color: color-mix(in oklab, var(--color-zinc-500) 85%, transparent);
+}
+
 table {
   background-color: rgb(20, 20, 20);
   box-shadow: var(--g-table-box-shadow);
@@ -122,5 +131,5 @@ a:active {
 }
 
 p {
-  margin-bottom: 36px;
+  margin-bottom: 28px;
 }
