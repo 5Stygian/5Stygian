@@ -5,7 +5,7 @@ import Link from "next/link";
 
 import DomHeader from "./headers/domHeader";
 import SubHeader from "./headers/subHeader";
-import TopBar from "./topbar";
+import TopBar from "./topbar/topbar";
 
 interface ContentProps {
   children: React.ReactNode;

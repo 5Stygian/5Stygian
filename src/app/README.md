@@ -15,3 +15,7 @@ Where scripts are stored.
 ### ``papers/``
 
 Where pages are stored.
+
+### ``resources``
+
+Where things like images are stored.

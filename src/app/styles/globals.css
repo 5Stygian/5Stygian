@@ -119,14 +119,17 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+a:hover:not(#topbar-logo) {
   filter: hue-rotate(30deg) saturate(115%) brightness(115%);
 }
 
-a:visited {
+a:visited:not(#topbar-logo) {
   filter: hue-rotate(-30deg);
 }
 
-a:active {
+a:active:not(#topbar-logo) {
   filter: brightness(1000000%);
 }
 
