@@ -22,7 +22,8 @@ export default function TopBarLinks({ links }: TopBarLinksProps) {
     let linksAreShown: boolean = false;
 
     const TOC: HTMLElement = getElementById("toc");
-    const TOCBaseClass: string = TOC?.className;
+    let TOCBaseClass: string = "";
+    if (TOC !== null) TOCBaseClass = TOC?.className;
     let TOCIsHidden: boolean = false
 
     linksToggle.addEventListener("click", (): void => {
@@ -33,7 +34,7 @@ export default function TopBarLinks({ links }: TopBarLinksProps) {
         links.className = linksBaseStyle :
         links.className = `hidden ${linksBaseStyle}`;
       
-      TOCIsHidden ?
+      if (TOC !== null) TOCIsHidden ?
         TOC.className = `${TOCBaseClass} hidden!` :
         TOC.className = TOCBaseClass;
     });
