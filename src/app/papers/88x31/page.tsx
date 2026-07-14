@@ -7,11 +7,11 @@ import { getElementById } from "@/app/scripts/utils";
 
 export default function LinkPage() {
   useEffect((): void => {
-    const codebox: HTMLDivElement = getElementById<HTMLDivElement>("codebox");
-    const requiredFonts: HTMLSpanElement = getElementById<HTMLSpanElement>("requiredFonts");
+    const codebox: HTMLDivElement = getElementById("codebox");
+    const requiredFonts: HTMLSpanElement = getElementById("requiredFonts");
 
-    const linkbox1: HTMLDivElement = getElementById<HTMLDivElement>("5StygianLink1");
-    const linkbox2: HTMLDivElement = getElementById<HTMLDivElement>("5StygianLink2");
+    const linkbox1: HTMLDivElement = getElementById("5StygianLink1");
+    const linkbox2: HTMLDivElement = getElementById("5StygianLink2");
 
     linkbox1.addEventListener("click", (): void => {
       codebox.innerText = StygianLink1.Code;
