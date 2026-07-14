@@ -6,6 +6,7 @@ import Link from "next/link";
 import DomHeader from "./headers/domHeader";
 import SubHeader from "./headers/subHeader";
 import TopBar from "./topbar/topbar";
+import Breakpoints from "./breakpoints";
 
 interface ContentProps {
   children: React.ReactNode;
@@ -22,16 +23,17 @@ export default function Content({
 }: ContentProps) {
   return (
     <>
+      <Breakpoints />
       <div id="THE-EGG" className="hidden">{egg}</div>
       <TopBar />
-      <div className="sm:w-3/5 h-full mx-auto pt-38 sm:pt-24 pb-4 px-12 bg-zinc-800 shadow-lg shadow-zinc-800">
+      <div className="sm:w-3/5 h-full mx-auto pt-24 pb-4 px-12 bg-zinc-800 shadow-lg shadow-zinc-800">
         <DomHeader text={domHeader} />
         <SubHeader text={subHeader} />
         <hr className="w-13/16! mx-auto! my-8! border-2! border-zinc-500/35!" />
         {children}
       </div>
       <hr className="h-6 border-none" />
-      <div className="pl-6 text-[14px]">
+      <div className="pl-4 text-[14px]">
         This website is{" "}
         <Link href="https://github.com/5Stygian/5Stygian">open source!</Link>
         <br />

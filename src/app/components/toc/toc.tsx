@@ -9,11 +9,11 @@ export default function TableOfContents() {
 
   useEffect(() => {
     const headerIds: Array<string> = [];
-    
-    const collapse: HTMLButtonElement = getElementById<HTMLButtonElement>("toc-collapse");
-    const collapseText: HTMLDivElement = getElementById<HTMLDivElement>("toc-collapseText");
-    const contents: HTMLDivElement = getElementById<HTMLHRElement>("toc-contents");
-    let contentsAreCollapsed: boolean = false
+
+    const collapse: HTMLButtonElement = getElementById("toc-collapse");
+    const collapseText: HTMLDivElement = getElementById("toc-collapseText");
+    const contents: HTMLDivElement = getElementById("toc-contents");
+    let contentsAreCollapsed: boolean = false;
 
     for (let i = 1; i <= 6; i++) {
       const headers = document.getElementsByTagName(`h${i}`);
@@ -27,7 +27,7 @@ export default function TableOfContents() {
 
     collapse.addEventListener("click", (): void => {
       contentsAreCollapsed = !contentsAreCollapsed;
-      
+
       if (contentsAreCollapsed) {
         contents.className = "hidden";
         collapseText.className = "rotate-180";
@@ -39,9 +39,9 @@ export default function TableOfContents() {
   }, []);
     
   return (
-    <div className="
-      fixed top-0 right-0 mt-4 mr-4 p-2.5 bg-zinc-900 border-2 border-zinc-700 z-9000
-      translate-y-20 sm:translate-y-0"
+    <nav id="toc" className="
+      fixed top-0 right-0 mt-4 mr-4 p-2.5 bg-zinc-900 border-2 border-zinc-700 z-9000 select-none
+      translate-y-14.5 sm:translate-y-0"
     >
       <div>
         <strong>Table of Contents</strong>
@@ -50,10 +50,10 @@ export default function TableOfContents() {
           id="toc-collapse"
           className="
             inline-block z-9002 ml-2 px-2 font-extrabold text-orange-300
-            border-l-2 border-l-zinc-500/35 select-none
+            border-l-2 border-l-zinc-500/35 float-right
             hover:cursor-pointer"
         >
-          <div id="toc-collapseText">V</div>
+          <div id="toc-collapseText" className="">V</div>
         </button>
       </div>
       <div id="toc-contents">
@@ -71,6 +71,6 @@ export default function TableOfContents() {
           );
         })}  
       </div>
-    </div>
+    </nav>
   );
 }
