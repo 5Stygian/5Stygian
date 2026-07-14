@@ -30,6 +30,7 @@ export default function TopBar() {
       </Link>
       <TopBarLinks links={[
         { text: "88x31", path: "/88x31" },
+        { text: "Components", path: "/components" },
         { text: WBP1Name, path: "/wbp1/hub" }
       ]} />
     </nav>
