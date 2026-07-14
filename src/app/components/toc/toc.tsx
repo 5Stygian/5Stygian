@@ -19,7 +19,24 @@ export default function TableOfContents() {
       const headers = document.getElementsByTagName(`h${i}`);
 
       for (const header of headers) {
-        if (header.id !== "") headerIds.push(header.id);
+        // I don't even know bro.
+        // Apparently, if I combine these statements
+        // I get an error that says this:
+        //    This comparison appears to be unintentional because
+        //    the types '""' and '"topbar-links-toggle"'
+        //    have no overlap
+        // Yeah, that makes perfect sense.
+        // I want to rail typescript so hard that it forgets
+        // how to even parse a string right now (not actually
+        // "right now". I meant "right now" as in the time
+        // of writing. [Yeah, we know, We're not stupid.
+        // {Hey, you never know. <Mark Z. Danielewski rn: ayo what the gubby?
+        // 「Daniel rn: *climbs stairs*」>}]).
+        if (header.id !== "") {
+          if (header.id !== "topbar-links-toggle") {
+            headerIds.push(header.id);
+          }
+        }
       }
     }
 
