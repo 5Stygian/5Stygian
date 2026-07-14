@@ -1,1 +1,2 @@
-I don't know how to write a serious bio.
+**5Stygian**
+    *- Writing blazingly fast TypeScript since a time that has occured previously.*
