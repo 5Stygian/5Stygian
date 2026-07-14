@@ -7,7 +7,8 @@ import { TopBarLinkStyle } from "@/app/globals";
 
 type LinkData = {
   text: string,
-  path: string
+  path: string,
+
 };
 
 interface TopBarLinksProps {
@@ -23,7 +24,7 @@ export default function TopBarLinks({ links }: TopBarLinksProps) {
 
     const TOC: HTMLElement = getElementById("toc");
     let TOCBaseClass: string = "";
-    if (TOC !== null) TOCBaseClass = TOC?.className;
+    if (TOC !== null) TOCBaseClass = TOC.className;
     let TOCIsHidden: boolean = false
 
     linksToggle.addEventListener("click", (): void => {
