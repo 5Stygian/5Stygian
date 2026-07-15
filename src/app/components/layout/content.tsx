@@ -33,7 +33,7 @@ export default function Content({
         {children}
       </div>
       <hr className="h-6 border-none" />
-      <div className="pl-4 text-[14px]">
+      <div className="text-[14px] translate-x-8">
         This website is{" "}
         <Link href="https://github.com/5Stygian/5Stygian">open source!</Link>
         <br />
