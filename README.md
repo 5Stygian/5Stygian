@@ -1,2 +1,1 @@
-**5Stygian**  
-    *- Writing blazingly fast TypeScript since a time that has occured previously.*
+*- Writing blazingly-fast, mobile-first, purposeful, elegant, optomized, production-ready code since a time that has occured previously.*
