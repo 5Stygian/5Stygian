@@ -18,7 +18,7 @@ export default function NakeHub() {
             </td>
             <td>A reference sheet for the language.</td>
             <td>
-              <c.Status status="in-progress"></c.Status>
+              <c.Status status="IN_PROGRESS"></c.Status>
             </td>
           </tr>
         </tbody>
