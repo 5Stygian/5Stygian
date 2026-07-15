@@ -9,7 +9,7 @@ interface DomHeaderProps {
 
 export default function DomHeader({ text }: DomHeaderProps) {
   return (
-    <h1 id="top" className="font-bold! -mb-5">
+    <h1 id="top" className="font-bold! -mb-3">
       {text}
     </h1>
   );
