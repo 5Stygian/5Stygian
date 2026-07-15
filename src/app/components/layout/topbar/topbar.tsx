@@ -29,10 +29,10 @@ export default function TopBar() {
         </h1>
       </Link>
       <TopBarLinks links={[
-        { text: "88x31", path: "88x31", status: "COMPLETE" },
+        { text: "88x31", path: "88x31" },
         { type: "DIVIDER" },
-        { text: "Components", path: "components", status: "COMPLETE" },
-        { text: WBP1Name, path: "wbp1/hub", status: "IN_PROGRESS" },
+        { text: "Components", path: "components" },
+        { text: WBP1Name, path: "wbp1/hub" },
         { text: "Conlangs", path: "conlangs/hub", type: "HIDDEN" }
       ]} />
     </nav>
