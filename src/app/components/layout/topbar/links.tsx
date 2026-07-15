@@ -4,11 +4,13 @@ import Link from "next/link";
 import { useEffect } from "react";
 import { getElementById } from "@/app/scripts/utils";
 import { TopBarLinkStyle } from "@/app/globals";
+import Status, { StatusType } from "../../misc/status";
 
 type LinkData = {
   text?: string | undefined,
   path?: string | undefined,
-  type?: "DIVIDER" | "HIDDEN" | undefined
+  type?: "DIVIDER" | "HIDDEN" | undefined,
+  status?: StatusType | undefined
 };
 
 interface TopBarLinksProps {
@@ -52,13 +54,25 @@ export default function TopBarLinks({ links }: TopBarLinksProps) {
       </button>
       <nav id="topbar-links" className="hidden">
         {links.map((item, index): React.ReactNode | null => {
+          // omg this looks soooo ugly
           switch (item.type) {
             case undefined:
-              return (
-                <Link href={`/papers/${item.path}`} className={TopBarLinkStyle} key={index}>
-                  {item.text}
-                </Link>
-              );
+              if (item.status === undefined) {
+                return (
+                  <Link href={`/papers/${item.path}`} className={TopBarLinkStyle} key={index}>
+                    {item.text}
+                  </Link>
+                );
+              } else {
+                return (
+                  <div key={index}>
+                    <Link href={`/papers/${item.path}`} className={`inline mr-4 ${TopBarLinkStyle}`}>
+                      {item.text}
+                    </Link>
+                    <Status status={item.status} />
+                  </div>
+                );
+              }
             case "DIVIDER":
               return <hr className="my-1!" key={index} />;
             case "HIDDEN":
